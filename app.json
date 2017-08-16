@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/about/about",
+    "pages/index/index",
+    "pages/logs/logs"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "仕馨",
+    "navigationBarTextStyle":"black"
+  }
+}
