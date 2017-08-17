@@ -61,3 +61,27 @@ page{
   background: #74c5be;
   padding: 0 10rpx;
 }
+
+/*二维码  */
+.twoCode{
+  height:300rpx;
+  background:url(/image/index_bg.jpg);
+  background-size:100%;
+  font-size:20rpx;
+  color:#545656;
+  text-align: center;
+  margin-bottom: 80rpx;
+}
+.twoCode .code{
+  display: flex;
+  justify-content: center;
+}
+.twoCode .code view{
+  margin:30rpx;
+  display: inline-block;
+}
+.twoCode .code view image{
+  width: 130rpx;
+  height: 130rpx;
+  display: block;
+}

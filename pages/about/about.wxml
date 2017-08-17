@@ -45,7 +45,7 @@
 <view class="page04 main">
   <text class="text">选择仕馨的理由</text>
   <view class="subTitle">REASON TO CHOOSE SHI XIN</view>
-  <view class="item" wx:for="{{page04}}">
+  <view class="item" wx:for="{{page04}}" wx:key="page04">
     <view class="item02">
       <image src="{{item.imgPath}}"></image>
       <text class="detailText itemText">{{item.itemText}}</text>
@@ -80,12 +80,10 @@
 </view> -->
 
 
-<!--page01  -->
 
-  <view class="main">
 
-    <text class="text">分店介绍</text>
 
-    <view class="subTitle">introduce</view>
-  </view>
+<!--二维码模板  -->
 
+<import src="/template/twocode.wxml"/>
+<template is="twocode" data="{{...twocode}}" /> 

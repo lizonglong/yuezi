@@ -55,6 +55,7 @@
   </view>
 </view>
 
+
 <!-- 导航栏模板 -->
 <template name='nav'>
 <view class="nav">

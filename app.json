@@ -2,9 +2,9 @@
 
 {
   "pages":[
-    "pages/index/index",
     "pages/about/about",
-    "pages/template/footer/footer",
+    "pages/index/index",
+   
     "pages/logs/logs"
     
   ],

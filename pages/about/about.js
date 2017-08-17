@@ -44,7 +44,23 @@ Page({
     autoplay: true,
     circular:true,
     interval: 2000,
-    duration: 1000
+    duration: 1000,
+
+    twocode:{
+      backImg:"../../image.index_bg.jpg",
+      twoCode: [
+        {
+          imgPath: "../../image/index_102.jpg",
+          text: "关注官方微信"
+        },
+        {
+          imgPath: "../../image/index_104.jpg",
+          text: "关注官方微博"
+        }
+      ],
+      bottomText: "Copyright©2011 仕馨月子会所 (粤ICP备17008523号-1)"
+    },
+    
   }
 
 })
