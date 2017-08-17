@@ -1,0 +1,8 @@
+<view class="server">
+  <block wx:for="{{content}}" wx:key="content">
+    <view class="content" bindtap="openS_tend">
+      <image src="{{item.imgPath}}"></image>
+      <text class="detailText">{{item.text}}</text>
+    </view>
+  </block>
+</view>

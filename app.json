@@ -2,9 +2,10 @@
 
 {
   "pages":[
-    "pages/about/about",
+    "pages/service/service",
+    "pages/service/service_tend/service_tend",
     "pages/index/index",
-   
+    "pages/about/about",
     "pages/logs/logs"
     
   ],
