@@ -1,0 +1,158 @@
+/* 复位样式 */
+
+
+/* 公共样式 */
+swiper{
+  height: 438rpx;
+}
+.subTitle{
+  font-size: 24rpx;
+  margin-bottom: 30rpx;
+}
+/* 查看更多 */
+.btn{
+  margin-top: 30rpx;
+}
+.btn image{
+  width: 20rpx;
+  height: 20rpx;
+}
+.btn  text{
+  color: #ed85ad;
+  font-size: 24rpx;
+}
+
+/* 服务图片 */
+.img-box{
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  font-size: 24rpx;
+  color: white;
+}
+.img-box image{
+  width: 100%;
+  height: 300rpx;
+}
+.img-box+.img-box{
+  margin-left: 1%;
+}
+.img-box .server-text{
+  position: absolute;
+  top: 50rpx;
+  left: 20rpx;
+  font-size: 26rpx;
+}
+.img-box .server-textEn{
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+}
+.img-box .btn-solve{
+  position: absolute;
+  font-size: 24rpx;
+  padding: 7rpx 16rpx;
+  border: 2rpx solid #fff;
+  border-radius: 0 10rpx;
+  bottom: 30rpx;
+  left: 24rpx;
+}
+
+.list-box{
+  display: flex;
+  border: 2rpx solid #ccc;
+  margin-bottom: 15rpx;
+  /* padding: 10rpx 0;  */
+}
+.list-box .list-avatar{
+  width: 160rpx;
+  padding: 20rpx;
+}
+.list-box .list-avatar image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.list-box .list-content{
+  flex: auto;
+  font-size: 22rpx;
+  text-align: left;
+  padding: 20rpx 0;
+}
+.list-box .list-content image{
+  height: 26rpx;
+  width: 170rpx;
+}
+
+/* 工具箱 */
+
+/* index */
+.container{
+  text-align: center;
+}
+ /* 导航栏 */
+.nav{
+  display: flex;
+  justify-content: column;
+  flex-wrap: wrap;
+  margin-bottom: 60rpx;
+}
+.nav .nav-list{
+  width: 25%;
+  margin-top: 60rpx;
+  font-size: 26rpx;
+  text-align: center;
+}
+.nav .nav-list image{
+  width: 100rpx;
+  height: 100rpx;
+}
+/*  视频 */
+.video{
+  margin-bottom: 60rpx;
+}
+
+/* 分店介绍 */
+.branch{
+  margin-bottom: 60rpx;
+}
+.branch swiper-item{
+    width: 50% !important;
+    padding: 0 1%;
+}
+/* 服务 */
+.service{
+  padding: 0 10rpx 30rpx;
+}
+
+/* 口碑 */
+.praise{
+  padding: 0 10rpx 30rpx;
+  margin-bottom: 30rpx;
+}
+.praise .publc-btn{
+  color: #fff;
+  margin: 0 20rpx 30rpx;
+  border-radius: 20rpx 0;
+  font-size: 26rpx;
+  padding: 6rpx 20rpx;
+}
+.praise .publc-btn:first-child{
+  background: #ed85ad;
+}
+.praise .detailText{
+  width: auto;
+  height: auto;
+  margin-bottom: 20rpx;
+  text-align: center;
+  color: #333;
+  font-size: 24rpx;
+}
+
+.honor{
+  margin-bottom: 30rpx;
+}
+.honor image{
+  width: 98%;
+  height: 200rpx;
+}
