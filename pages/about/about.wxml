@@ -1,4 +1,5 @@
 
+
 <!--page01  -->
 <view class="page01 main">
   <text class="text">品牌故事</text>
@@ -77,3 +78,14 @@
   </block>
 </swiper>
 </view> -->
+
+
+<!--page01  -->
+
+  <view class="main">
+
+    <text class="text">分店介绍</text>
+
+    <view class="subTitle">introduce</view>
+  </view>
+

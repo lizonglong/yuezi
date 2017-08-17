@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* pages/about/about.wxss */
 .main{
   text-align: center;
@@ -101,4 +102,9 @@
   width:310rpx;
   height:460rpx;
   margin: 0 32rpx;
+=======
+/* pages/about/about.wxss */
+.main{
+  text-align: center;
+>>>>>>> 8306617eed4c6ea1dc0bc79a03b09dafc2b3ad58
 }

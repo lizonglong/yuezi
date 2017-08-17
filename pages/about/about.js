@@ -1,3 +1,4 @@
+
 Page({
   data: {
     page04:[
@@ -45,4 +46,5 @@ Page({
     interval: 2000,
     duration: 1000
   }
+
 })
