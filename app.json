@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/template/footer/footer",
     "pages/about/about",
     "pages/index/index",
     "pages/logs/logs"

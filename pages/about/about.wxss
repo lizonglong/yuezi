@@ -1,4 +1,104 @@
 /* pages/about/about.wxss */
 .main{
   text-align: center;
+  padding: 60rpx 0;
+}
+
+.page01 image{
+  width:100%;
+}
+/*page02  */
+.page02{
+  overflow: hidden;
+}
+.page02 image{
+  width: 300rpx;
+  height: 480rpx;
+  margin: 40rpx;
+  float: left;
+}
+/*page03  */
+.page03{
+  background: url(/image/about_back.jpg);
+  background-size: 100%;
+}
+.page03 .detailText{
+  text-align: justify;
+}
+.page03 .item{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40rpx auto;
+  justify-content: space-around;
+}
+.page03 .item .item01{
+   width: 333rpx;
+    margin-bottom:30rpx;   
+}
+.page03 .item .item01 image{
+  width: 333rpx;
+  height: 333rpx;
+  margin-bottom:20rpx;  
+}
+/*page04  */
+.page04 .item{
+ width: 370rpx;
+  padding-top: 30rpx; 
+  float: left;  
+}
+.page04 .item .item02{
+  width: 370rpx;
+  margin-bottom:30rpx;
+  text-align: center;
+   
+}
+.page04 .item .item02 image{
+  width: 250rpx;
+  height: 250rpx;
+  margin-bottom:20rpx;  
+}
+.page04 .item .item02 .detailText{
+ text-indent: 0;
+}
+.page04 .item .item02 .itemText{
+  font-size:28rpx;
+  color: #70c6bd;
+  text-align: center;
+ 
+}
+/*page05  */
+.page05 image{
+  width: 680rpx;
+  vertical-align: middle;
+}
+.page05 #img-1{
+  height: 115rpx;
+}
+.page05 #img-2{
+  height: 215rpx;
+}
+.page05 #img-3{
+  height: 130rpx;
+}
+.page05 #img-4{
+  height: 215rpx;
+}
+/*.page06  */
+.page06 swiper{
+  background: url(/image/about_back001.jpg);
+  background-size: 100%;
+  height: 460rpx;
+  /* width: 90%; */
+  margin: auto;
+  padding: 30rpx 0;
+}
+.page06 swiper swiper-item{
+  width:310rpx;
+  
+}
+.page06 .slide-image{
+  width:310rpx;
+  height:460rpx;
+  margin: 0 32rpx;
 }
