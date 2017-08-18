@@ -62,6 +62,11 @@ page{
   padding: 0 10rpx;
 }
 
+/* banner */
+swiper{
+  height: 438rpx;
+}
+
 /* 页脚导航栏 */
 .footer{
   position:fixed;
@@ -123,7 +128,6 @@ page{
   flex-wrap: wrap;
   font-size: 24rpx;
   color: #333;
-  font-weight: 600;
   background: #f9f7f6;
   padding: 20rpx;
 }

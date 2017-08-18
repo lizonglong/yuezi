@@ -1,0 +1,24 @@
+<view class="container">
+  <import src="/template/banner.wxml" />
+  <template is="banner" data="{{...banner}}"></template>
+  <view class="branch">
+    <view class="text">分店介绍</view>
+    <view class="subTitle">BRANCH</view>
+    <view class="img-list">
+      <template is="branch" data="{{imgList:branch}}"></template>
+    </view>
+  </view>
+  <import src="/template/twocode.wxml"/>
+  <import src="/template/footer.wxml"/>
+  <template is="twocode" data="{{backImg:twocode.backImg,twoCode:twocode.twoCode}}"></template>
+  <template is="footer" data="{{navImg:nav,barUp:barUp}}"></template>
+</view>
+<!-- 图片列表 -->
+<template name="branch">
+  <block wx:for="{{imgList}}" wx:key="branchImg">
+    <view class="img-box" data-index="{{index}}" bindtap="branchListClick">
+      <image src="{{item.imgUrl}}"></image>
+      <view class="branch-text">{{item.text}}</view>
+    </view>
+  </block>
+</template>

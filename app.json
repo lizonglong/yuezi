@@ -6,7 +6,9 @@
     "pages/service/service_tend/service_tend",
     "pages/index/index",
     "pages/about/about",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/branch/branch",
+    "pages/branch/branch_introduce"
     
   ],
   "window":{

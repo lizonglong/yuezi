@@ -182,6 +182,20 @@ Page({
         ]
       }
     ],
+    twocode: {
+      backImg: "/image/image.index_bg.jpg",
+      twoCode: [
+        {
+          imgPath: "/image/index_102.jpg",
+          text: "关注官方微信"
+        },
+        {
+          imgPath: "/image/index_104.jpg",
+          text: "关注官方微博"
+        }
+      ],
+      bottomText: "Copyright©2011 仕馨月子会所 (粤ICP备17008523号-1)"
+    },
     tabSelect:0
   },
   navClick:function(ev){
@@ -205,7 +219,6 @@ Page({
     });
   },
   barClick: function(ev){
-    console.log(ev)
     var index = ev.currentTarget.dataset.index;
     if(index == 0){
 

@@ -1,0 +1,124 @@
+/* /pages/branch/branch_introduce.wxss */
+/* 复位样式 */
+
+/* 公共样式 */
+.beyond-box{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+swiper{
+  height: 438rpx;
+}
+.text{
+  font-size: 38rpx;
+}
+.subTitle{
+  font-size: 24rpx;
+  margin-bottom: 30rpx;
+}
+/* 拖动模板样式 */
+.bannerDrap{
+  height: 300rpx;
+}
+.bannerDrap swiper-item{
+  display: flex;
+}
+.bannerDrap .img-text{
+  position: relative;
+  flex:1;
+  align-self: center;
+  padding:30rpx 20rpx;
+  text-align: left;
+}
+.bannerDrap .img-text text:after{
+  content: '';
+  display: block;
+  width: 100rpx;
+  height: 4rpx;
+  margin-top: 30rpx;
+  background: #74c5be;
+}
+.bannerDrap swiper-item image{
+  flex:1;
+  width:100%;
+  height:250rpx;
+  align-self: center;
+}
+
+/* 主样式 */
+.container{
+  font-size: 24rpx;
+  text-align: center;
+}
+.intro{
+  padding: 30rpx 20rpx;
+  text-align: left;
+}
+.intro .intro-msg{
+  position: relative;
+  padding: 20rpx 20rpx 50rpx 20rpx;
+}
+.intro .intro-title{
+  font-size: 30rpx;
+  font-weight: bold;
+  margin: 20rpx 0;
+}
+.intro .intro-title text{
+  position: relative;
+  text-align: justify;
+}
+.intro .intro-content{
+  text-indent: 60rpx;
+}
+.intro .intro-title text:after{
+  position: absolute;
+  bottom: -4rpx;
+  left: 0;
+  content: '';
+  display: block;
+  width: 60rpx;
+  height: 3rpx;
+  background: #74c5be;
+}
+.intro image{
+  display: block;
+  width: 550rpx;
+  height: 320rpx;
+  margin: 0 auto;
+}
+.environment{
+  padding: 20rpx;
+}
+
+/* 照片墙 */
+.photo-wall{
+  padding: 0 20rpx 30rpx;
+}
+.photo-wall image{
+  width: 100%;
+}
+.photo-wall .wall-col01{
+  position: relative;
+}
+.photo-wall .wall-col01 .wall-text{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 40rpx;
+  font-size: 20rpx;
+  color: white;
+  background: -webkit-linear-gradient(top,rgba(140, 194, 178, 0),rgba(140, 194, 178, 1));
+}
+
+/* 地理位置 */
+.location{
+  padding: 0 20rpx;
+}
+.location .map{
+  border: 1rpx solid #ccc;
+  margin-bottom: 30rpx;
+}
