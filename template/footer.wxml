@@ -1,0 +1,30 @@
+<template name="footer">
+  <view class="footer">
+    <view class="footer-bar">
+      <view class="foot-left" style="flex:1;" data-index="0" bindtap="barClick">
+        <image src="/images/w-首页06_03.png"></image>
+        <text>联系电话</text>
+      </view>
+      <view class="foot-center" style="flex:1" data-index="1" bindtap="barClick">
+        <image src="/images/w-首页06_05.png"></image>
+        <text>预约看店</text>
+      </view>
+      <view class="foot-right" style="flex:1" data-index="2" bindtap="barClick">
+        <image src="/images/w-首页06_07.png"></image>
+        <text>导航</text>
+      </view>
+    </view>
+    <view class="footer-nav" animation="{{barUp}}">
+      <block wx:for="{{navImg}}" wx:key="navList">
+        <view class="nav-list" data-index="{{index}}" bindtap="navClick">
+          <image src="{{item.url}}"></image>
+          <view>{{item.text.length==6?"服务体系":item.text}}</view>
+        </view>
+      </block>
+      <view class="nav-list">
+        <image src="/images/w-首页_101.png"></image>
+        <view>关闭</view>
+      </view>
+    </view>
+  </view>
+</template>

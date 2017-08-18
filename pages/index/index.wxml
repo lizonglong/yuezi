@@ -1,7 +1,7 @@
 <view class="container">
   <import src="/template/banner.wxml"/>
   <template is="banner" data="{{...banner}}" />
-  <template is='nav' data="{{...nav}}" />
+  <template is='nav' data="{{navImg:nav}}" />
   <view class="video">
     <view class="text">视频专区</view>
     <view class="subTitle">VIDEO GALLERY</view>
@@ -31,9 +31,9 @@
     <view class="text">仕馨口碑</view>
     <view class="subTitle">PLUBLIC PRAISE</view>
     <view class="tab-btn">
-      <view class="publc-btn" bindtap="javacript:;">大众点评</view>
-      <view class="publc-btn">微信朋友圈</view>
-      <view class="publc-btn">新浪微博</view>
+      <view class="publc-btn {{tabSelect==0?'cur':''}}" data-index="0" bindtap="praiseClick">大众点评</view>
+      <view class="publc-btn {{tabSelect==1?'cur':''}}" data-index="1" bindtap="praiseClick">微信朋友圈</view>
+      <view class="publc-btn {{tabSelect==2?'cur':''}}" data-index="2" bindtap="praiseClick">新浪微博</view>
     </view>
     <view class="detailText">自2009年始，仕馨月子会所始终立于月子服务前线，历经8年的砥砺前行和经验累积，以饱含赤诚真心的专业姿态，服务了10000多个妈妈科学坐月子，见证她们恢复孕前的健康美丽；凭借经验丰富的科学方式，给予了5000多名宝宝贴心满月呵护，见证他们聪明健康的启航。 这短暂一个月的相伴，带着爱意次第相传，我们听到万千个声音，甚觉欣喜与荣幸，她们说……</view>
     <block  wx:for="{{praise}}" wx:key="praise">
@@ -53,13 +53,15 @@
     <view class="subTitle">BRAND HONOR</view>
     <image src="/images/w-首页_68_14.jpg"></image>
   </view>
+  <import src="/template/footer" />
+  <template is="footer" data="{{barUp:barUp,navImg: nav}}"></template>
 </view>
 
 <!-- 导航栏模板 -->
 <template name='nav'>
 <view class="nav">
   <block wx:for="{{navImg}}" wx:key="nav">
-    <view class="nav-list">
+    <view class="nav-list" data-index="{{index}}" bindtap="navClick">
       <image src="{{item.url}}"></image>
       <view>{{item.text}}</view>
     </view>

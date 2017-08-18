@@ -12,43 +12,44 @@ Page({
       duration: 1000,
       circular: true
     },
-    nav:{
-      navImg: [
-        {
-          url: '/images/w-首页_05.png',
-          text: '首页'
-        },
-        {
-          url: '/images/w-首页_07.png',
-          text: "关于仕馨"
-        }, 
-        {
-          url:'/images/w-首页_09.png',
-          text: '专业服务体系'
-        },
-        {
-          url: '/images/w-首页_11.png',
-          text: '分店介绍'
-        },
-        {
-          url: '/images/w-首页_17.png',
-          text: "套餐服务"
-        },
-        {
-          url: '/images/w-首页_18.png',
-          text: "妈妈见证"
-        },
-        {
-          url: '/images/w-首页_19.png',
-          text: "月子资讯"
-        },
-        {
-          url: '/images/w-首页_20.png',
-          text: "月子资讯"
-        }
-      ]
-    },
-    videoUrl: 'http://123.151.152.149/vhot2.qqvideo.tc.qq.com/AgpuPB9PVMRS2LFkJkg_xW5r94q3jkm5Y7Y_lDubI6v4/e01560xy74g.m701.mp4?sha=8FCA8E2D8CDEB7713ECA959A7B1A6B78C1FC4AE1&vkey=8EC9B2F70DC99388CF79ABDAB49598B6CA03E86DD44E28E84B94B623F56CDDE6C146D2C6EB5973E46DA6B31BE65274507AAEF54872E9B07E4F3F35CC58FF558797528AFE1EA982B9CE7A961FE2B097DB4607C90559839160E9BB4EF7AC65D03A5F0858A16D796376315F9847934DD27BFEA58C74B40D17A2&br=29&platform=2&fmt=auto&level=0&sdtfrom=v5010&guid=06b741038042432903df98ac5a573465&ocid=225188012&ocid=764220844&ocid=481127268',
+    nav: [
+      {
+        url: '/images/w-首页_05.png',
+        text: '首页',
+        pageUrl:"/pages/index/index"
+      },
+      {
+        url: '/images/w-首页_07.png',
+        text: "关于仕馨",
+        pageUrl: "/pages/about/about"
+      }, 
+      {
+        url:'/images/w-首页_09.png',
+        text: '专业服务体系',
+        pageUrl: "/pages/profession/profession"
+      },
+      {
+        url: '/images/w-首页_11.png',
+        text: '分店介绍'
+      },
+      {
+        url: '/images/w-首页_17.png',
+        text: "套餐服务"
+      },
+      {
+        url: '/images/w-首页_18.png',
+        text: "妈妈见证"
+      },
+      {
+        url: '/images/w-首页_19.png',
+        text: "月子资讯"
+      },
+      {
+        url: '/images/w-首页_20.png',
+        text: "月子资讯"
+      }
+    ],
+    videoUrl: 'http://ugcdl.video.gtimg.com/flv/162/228/e01560xy74g.m701.mp4?vkey=61524392932B184B242FDDA0BF2F717FA444F74D626D8AC4736DAF84A489BA78AA317F2D744B6F3B6DBA486B35E51CA2FF356D874C977E6833FF1575887390E2DB6EFF871B4A4235429076C47B6540C0E654AFA467C856E1CDEEE3DAD55DFF544723CEB424C26559243A8F750CE1F4F4CB52D217CADF0C91&br=29&platform=2&fmt=auto&level=0&sdtfrom=v5010&guid=06b741038042432903df98ac5a573465',
     branch:{
       imgUrls:[
         '/images/w-首页_01.jpg',
@@ -118,6 +119,27 @@ Page({
     ],
     praise: [
       {
+        select: true,
+        list: [
+          {
+            imgUrl: "/images/w-首页_59.png",
+            content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
+          },
+          {
+            imgUrl: "/images/w-首页_62.png",
+            content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
+          },
+          {
+            imgUrl: "/images/w-首页_64.png",
+            content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
+          },
+          {
+            imgUrl: "/images/w-首页_66.png",
+            content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
+          }
+        ]
+      },
+      {
         select: false,
         list:[
           {
@@ -139,7 +161,7 @@ Page({
         ]
       },
       {
-        select: true,
+        select: false,
         list: [
           {
             imgUrl: "/images/w-首页2_59.png",
@@ -159,7 +181,47 @@ Page({
           }
         ]
       }
-    ]
+    ],
+    tabSelect:0
   },
+  navClick:function(ev){
+    var index = ev.currentTarget.dataset.index;// 模板不支持target
+    if(index == 0 || index>=2){
+      return;
+    }
+    wx.navigateTo({
+      url: this.data.nav[index].pageUrl
+    })
+  },
+  praiseClick: function(ev){
+    var index = ev.target.dataset.index;
+    this.data.praise.forEach((item)=>{
+      item.select = false;
+    })
+    this.data.praise[index].select = true;
+    this.setData({
+      tabSelect: index,
+      praise: this.data.praise
+    });
+  },
+  barClick: function(ev){
+    console.log(ev)
+    var index = ev.currentTarget.dataset.index;
+    if(index == 0){
+
+    }else if(index == 1){
+
+    }else{
+      this.data.barShow = !this.data.barShow;
+      var animation = wx.createAnimation({
+        duration: 500,
+        timingFunction: 'ease-in-out'
+      });
+      animation.bottom(this.data.barShow?"134rpx":"-500rpx").step();
+      this.setData({
+        barUp: animation.export()
+      })
+    }
+  }
 })
 
