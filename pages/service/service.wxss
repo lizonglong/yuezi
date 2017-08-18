@@ -1,0 +1,10 @@
+.server{
+  padding: 35px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.server .content image{
+  width:340rpx;
+  height:200rpx;
+}

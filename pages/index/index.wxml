@@ -57,6 +57,7 @@
   <template is="footer" data="{{barUp:barUp,navImg: nav}}"></template>
 </view>
 
+
 <!-- 导航栏模板 -->
 <template name='nav'>
 <view class="nav">
