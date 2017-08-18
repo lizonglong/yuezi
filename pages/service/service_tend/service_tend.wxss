@@ -1,1 +1,126 @@
-/* pages/service/service_tend/service_tend.wxss */
+.main{
+  text-align: center;
+}
+
+.one{
+  margin-top: 20rpx;
+}
+.one image{
+  width:95%;
+  height: 350rpx;
+  margin:auto;
+}
+
+swiper{
+  margin-top: 20rpx;
+  height:870rpx;
+  text-align: center;
+}
+swiper swiper-item{
+  text-align: center;
+}
+swiper swiper-item image{
+  width: 620rpx;
+  height:800rpx;
+  margin:0 10rpx;
+}
+swiper swiper-item .detailText{
+  text-align: center;
+}
+
+.content2{
+  margin-top: 20rpx;
+}
+.content2 .item03{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 25rpx;
+}
+.content2 .item03 .item{
+  width:340rpx;
+  text-align: center;
+  overflow: hidden;
+}
+.content2 .item03 .item image{
+  width:340rpx;
+  height: 200rpx;
+  display: block;
+ }
+.content2 .item03 .item text{
+  padding: 0;
+  text-indent:0;
+  text-align:center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content03{
+  margin-top: 20rpx;
+}
+.content03 .item03{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 25rpx;
+}
+.content03 .item03 .item{
+  width:220rpx;
+  text-align: center;
+  overflow: hidden;
+}
+.content03 .item03 .item image{
+  width:220rpx;
+  height: 170rpx;
+  display: block;
+ }
+.content03 .item03 .item text{
+  padding: 0;
+  text-indent:0;
+  text-align:center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.careSystem>image{
+  width: 100%;
+  height:324rpx;
+  margin:25rpx 0; 
+}
+.bannerImg{
+  display: none;
+}
+
+.content02{
+  margin-top: 20rpx;
+}
+.content02 .item03{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 25rpx;
+}
+.content02 .item03 .item{
+  width:340rpx;
+  text-align: center;
+  overflow: hidden;
+}
+.content02 .item03 .item image{
+  width:340rpx;
+  height: 200rpx;
+  display: block;
+ }
+.content02 .item03 .item text{
+  padding: 0;
+  text-indent:0;
+  text-align:center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content02.content02_2 .item03 .item image{
+  height:400rpx;
+}

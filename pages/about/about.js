@@ -46,6 +46,8 @@ Page({
     interval: 2000,
     duration: 1000,
 
+
+// 二维码模板数据
     twocode:{
       backImg:"../../image.index_bg.jpg",
       twoCode: [

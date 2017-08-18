@@ -83,7 +83,7 @@
 
 
 
-<!--二维码模板  -->
+<!--二维码  -->
 
 <import src="/template/twocode.wxml"/>
 <template is="twocode" data="{{...twocode}}" /> 
