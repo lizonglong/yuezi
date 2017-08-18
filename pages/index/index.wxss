@@ -137,7 +137,7 @@ swiper{
   font-size: 26rpx;
   padding: 6rpx 20rpx;
 }
-.praise .publc-btn:first-child{
+.praise .publc-btn.cur{
   background: #ed85ad;
 }
 .praise .detailText{
