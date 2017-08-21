@@ -1,0 +1,68 @@
+<!--pages/praise/praise.wxml-->
+<view class="container">
+  <import src="/template/banner.wxml"/>
+  <template is="banner" data="{{...banner}}"></template>
+  <view class="praise">
+    <view class="praise-head">
+      <view class="publc-btn {{praiseList ===1?'cur':''}}" bindtap="praiseCheck" data-index="1">大众点评</view>
+      <view class="publc-btn {{praiseList ===2?'cur':''}}" bindtap="praiseCheck" data-index="2">微信朋友圈</view>
+      <view class="publc-btn {{praiseList ===3?'cur':''}}" bindtap="praiseCheck" data-index="3">微博</view>
+      <view class="publc-btn {{praiseList ===0?'cur':''}}" bindtap="praiseCheck" data-index="0">视频专区</view>
+    </view>
+    <view class="praise-intro" wx:if="{{praiseList}}">
+      <text>自2009年始，仕馨月子会所始终立于月子服务前线，历经8年的砥砺前行和经验累积，以饱含赤诚真心的专业姿态，服务了众多妈妈科学坐月子，见证她们恢复孕前的健康美丽；凭借经验丰富的科学方式，给予了5000多名宝宝贴心满月呵护，见证他们聪明健康的启航。 这短暂一个月的相伴，带着爱意次第相传，我们听到万千个声音，甚觉欣喜与荣幸，她们说……</text>
+    </view>
+    <block  wx:if="{{praiseList}}"  wx:for="{{praise[praiseList]}}" wx:key="praise">
+      <view class="praise-list" wx:if="{{index>(praiseIndex+praiseCur)*12 && index<(praiseIndex+praiseCur+1)*12}}">
+        <template is="praise" data="{{text: item}}"></template>
+      </view>
+    </block>
+    <view class="list-bar" wx:if="{{praise[praiseList].length>12}}">
+      <view class="derect">
+        <text bindtap="headList">{{'<<'}}</text>
+        <text bindtap="preList">{{'<'}}</text>
+        <text class="{{praiseCur === 0?'cur':''}}" data-index="0" bindtap="numClick">{{praiseIndex>0?'...':praiseIndex+1}}</text>
+        <text class="{{praiseCur === 1?'cur':''}}" data-index="1" bindtap="numClick" wx:if="{{praise[praiseList].length>(praiseIndex+1)*12}}">{{praiseIndex+2}}</text> 
+        <text class="{{praiseCur === 2?'cur':''}}" data-index="2" bindtap="numClick" wx:if="{{praise[praiseList].length>(praiseIndex+2)*12}}">{{praiseIndex+3}}</text>
+        <text class="{{praiseCur === 3?'cur':''}}" data-index="3" bindtap="numClick" wx:if="{{praise[praiseList].length>(praiseIndex+3)*12}}">{{praiseIndex+4}}</text>
+        <text class="{{praiseCur === 4?'cur':''}}" data-index="4" bindtap="numClick" wx:if="{{praise[praiseList].length>(praiseIndex+4)*12}}">{{praiseIndex+5}}</text>
+        <text class="{{praiseCur === 5?'cur':''}}" data-index="5" bindtap="numClick" wx:if="{{praise[praiseList].length>5*12}}">{{praise[praiseList].length>(praiseIndex+6)*12?'...':praiseIndex+6}}</text>
+        <text bindtap="nextList">{{'>'}}</text>
+        <text bindtap="endList">{{'>>'}}</text>
+      </view>
+    </view>
+    <view class="praise-video" wx:if="{{!praiseList}}">
+      <view class="video-head">
+        <view class="section tc">
+          <video src="http://14.29.117.25/vhot2.qqvideo.tc.qq.com/A0A4OLCYAltgsUeqPVJ9vw4PRtJuUOPkTmPJMn12qF1w/e01560xy74g.m701.mp4?vkey=40EC16ABC2C005F744F77A62B1536F4165B056D0D44E283E21F7E30459020D0A3E0126DDA9BE3F19BFB3C57D704E21F640A33E8CD99B52E9142CB0ED7B28D67DECB557847FA860E38A9B593B04C35E9385B0C84D427A12A842CC48B15332870506F5CD1B3B839A30571A90F36D78F44C22C32D081634CE4A&br=29&platform=2&fmt=auto&level=0&sdtfrom=v5010&guid=06b741038042432903df98ac5a573465" controls></video>
+        </view>
+      </view>
+      <view class="video-list">
+        <block wx:for="{{praise[praiseList]}}">
+          <template is="praiseVideo" data="{{...item}}"></template>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 口碑列表 -->
+<template name="praise">
+  <view class="list-box">
+    <view class="list-avatar">
+      <image src="{{text.imgUrl}}"></image>
+    </view>
+    <view class="list-content">
+      <image src="/images/w-首页_10.png"></image>
+      <view>{{text.content}}</view>
+    </view>
+  </view>
+</template>
+<!-- 视频列表模板 -->
+<template name="praiseVideo">
+  <view class="video-content">
+    <view class="video-img">
+      <image src="{{imgUrl}}"></image>
+    </view>
+    <view class="video-title">{{videoTitle}}</view>
+  </view>
+</template>

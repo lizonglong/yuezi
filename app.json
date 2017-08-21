@@ -8,7 +8,8 @@
     "pages/about/about",
     "pages/logs/logs",
     "pages/branch/branch",
-    "pages/branch/branch_introduce"
+    "pages/branch/branch_introduce",
+	"pages/praise/praise"
     
   ],
   "window":{
