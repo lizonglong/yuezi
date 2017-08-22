@@ -12,7 +12,7 @@
     <view class="subTitle">BRANCH</view>
     <template is="banner" data="{{...branch}}" />
     <view class="btn">
-      <image src="/images/w-首页_07_07.jpg"></image>
+      <image src="/images/w-homepage_07_07.jpg"></image>
       <text>点击查看全部</text>
     </view>
   </view>
@@ -44,14 +44,14 @@
       </view>
     </block>
     <view class="btn">
-      <image src="/images/w-首页_07_07.jpg"></image>
+      <image src="/images/w-homepage_07_07.jpg"></image>
       <text>点击查看全部</text>
     </view>
   </view>
   <view class="honor">
     <view class="text">品牌荣誉</view>
     <view class="subTitle">BRAND HONOR</view>
-    <image src="/images/w-首页_68_14.jpg"></image>
+    <image src="/images/w-homepage_68_14.jpg"></image>
   </view>
   <import src="/template/footer" />
   <template is="footer" data="{{barUp:barUp,navImg: nav}}"></template>
@@ -94,7 +94,7 @@
       <image src="{{text.imgUrl}}"></image>
     </view>
     <view class="list-content">
-      <image src="/images/w-首页_10.png"></image>
+      <image src="/images/w-homepage_10.png"></image>
       <view>{{text.content}}</view>
     </view>
   </view>

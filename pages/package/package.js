@@ -1,47 +1,70 @@
-var app=getApp();
 Page({
   data:{
-    content:[
+    page01:[
+      "/images/package_03.jpg",
+      "/images/package_04.jpg",
+      "/images/package_05.jpg",
+      "/images/package_06.jpg"
+    ],
+    page02: [
       {
-        imgPath:"/images/professionalSystem_03.jpg",
-        text:"新生儿健康护理",
-        id:0
+        imgUrl: "/images/package_09.jpg",
+        text: "妈妈日常专业护理"
       },
       {
-        imgPath: "/images/professionalSystem_05.jpg",
-        text: "中医调理保健",
-        id: 1
+        imgUrl: "/images/package_10.jpg",
+        text: "通乳服务"
       },
       {
-        imgPath: "/images/professionalSystem_09.jpg",
-        text: "产后妈妈康复",
-        id:2
+        imgUrl: "/images/package_12.jpg",
+        text: "专家查房"
       },
       {
-        imgPath: "/images/professionalSystem_10.jpg",
-        text: "母婴专业营养",
-        id:3
+        imgUrl: "/images/package_13.jpg",
+        text: "身体功能性修复"
       },
       {
-        imgPath: "/images/professionalSystem_13.jpg",
-        text: "产后妈妈塑形美丽",
-        id:4
+        imgUrl: "/images/package_16.jpg",
+        text: "中医营养调理"
       },
       {
-        imgPath: "/images/professionalSystem_14.jpg",
-        text: "新生儿早期智力开发",
-        id:5
+        imgUrl: "/images/package_17.jpg",
+        text: "生活护理"
       },
       {
-        imgPath: "/images/professionalSystem_17.jpg",
-        text: "立体式院感防御",
-        id:6
+        imgUrl: "/images/package_19.jpg",
+        text: "中医保健调理"
       },
       {
-        imgPath: "/images/professionalSystem_18.png",
-        text: "全天候无缝安保体系",
-        id:7
+        imgUrl: "/images/package_20.jpg",
+        text: "美容项目"
+      },
+      {
+        imgUrl: "/images/package_22.jpg",
+        text: "产后修复"
+      },
+      {
+        imgUrl: "/images/package_23.jpg",
+        text: "形体恢复"
       }
+    ],
+    page03:[
+        {
+          imgUrl: "/images/package_32.jpg",
+          text: "宝宝日常专业护理"
+        },
+        {
+          imgUrl: "/images/package_33.jpg",
+          text: "生活护理"
+        },
+        {
+          imgUrl: "/images/package_35.jpg",
+          text: "专家查房"
+        },
+        {
+          imgUrl: "/images/package_36.jpg",
+          text: "新生儿早教"
+        }
     ],
     banner: {
       imgUrls: [
@@ -104,9 +127,7 @@ Page({
         text: "月子资讯"
       }
     ],
-    
   },
-
   barClick: function (ev) {
     console.log(ev)
     var index = ev.currentTarget.dataset.index;
@@ -125,15 +146,7 @@ Page({
         barUp: animation.export()
       })
     }
-  },
-  //点击事件
-
-  //跳到service_tend
-  openS_tend:function(ev){
-    var index = ev.currentTarget.dataset.id;
-    app.globalData.id=index;
-    wx.navigateTo({
-      url: 'service_tend/service_tend?id='+index
-    })
   }
+
+
 })

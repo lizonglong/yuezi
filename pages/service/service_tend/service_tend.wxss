@@ -1,7 +1,7 @@
 .main{
   text-align: center;
 }
-
+/*排版为一张圆角图  */
 .one{
   margin-top: 20rpx;
 }
@@ -10,24 +10,28 @@
   height: 350rpx;
   margin:auto;
 }
-
-swiper{
+/*轮播图  */
+.swiper{
   margin-top: 20rpx;
-  height:870rpx;
+  padding: 0 20rpx;
+  height:870rpx; 
   text-align: center;
 }
-swiper swiper-item{
+.swiper swiper-item.swiper-item{
+  display: block !important;
+  /* height:  */
   text-align: center;
 }
-swiper swiper-item image{
-  width: 620rpx;
+.swiper .swiper-item image{
+  width: 640rpx;
   height:800rpx;
   margin:0 10rpx;
 }
-swiper swiper-item .detailText{
+.swiper .swiper-item .detailText{
   text-align: center;
 }
 
+/*排版为2张圆角图  */
 .content2{
   margin-top: 20rpx;
 }
@@ -55,7 +59,7 @@ swiper swiper-item .detailText{
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
+/*排版为3张图  */
 .content03{
   margin-top: 20rpx;
 }
@@ -83,16 +87,17 @@ swiper swiper-item .detailText{
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
+/*中间部分的banner  */
 .careSystem>image{
   width: 100%;
   height:324rpx;
   margin:25rpx 0; 
 }
+/*添加的隐藏属性  */
 .bannerImg{
   display: none;
 }
-
+/*排版为2张图  */
 .content02{
   margin-top: 20rpx;
 }
@@ -120,7 +125,7 @@ swiper swiper-item .detailText{
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
+/*排版为2张图 && 高度有变化的图  */
 .content02.content02_2 .item03 .item image{
   height:400rpx;
 }

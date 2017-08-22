@@ -1,0 +1,141 @@
+/*公共样式  */
+.main{
+  text-align: center;
+}
+.page{
+  margin-top: 40rpx; 
+}
+/*页面样式  */
+/*page01*/
+.page01 image{
+  width:177rpx;
+  height: 357rpx;
+}
+/*page02*/
+.page02 .content{
+  padding: 0 20rpx;
+}
+.page02 .content .item{
+  width: 50%;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 20rpx;
+}
+.page02 .content .item image{
+  width: 100%;
+  height: 210rpx;
+  vertical-align: middle;
+}
+.page02 .content .item .detailText{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(145,196,187,.5);
+  text-align: center;
+  padding: 10rpx 0 0 0;
+  
+}
+/*page03*/
+.page03 .content2{
+  padding: 0 20rpx;
+  display: flex;
+}
+.page03 .content2 .block{
+  width:45%;
+  flex: auto;
+}
+.page03 .content2 .block>image{
+  width:100%;
+  height: 180rpx;
+}
+  /*  */
+.page03 .contentCenter{
+  position: relative;
+  /* overflow: hidden; */
+  height: 468rpx;
+  margin-top: 50rpx;
+}
+.page03 .contentCenter>image{
+   width: 200rpx;
+   height: 180rpx;
+   float: left; 
+}
+.page03 .contentCenter .blueBanner{
+  width: 100%;
+  height: 278rpx;
+  background: #74c5be;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+.page03 .contentCenter .imgBox{
+  width: 520rpx;
+  position: absolute;
+  right: 20rpx;
+  z-index: 2;
+}
+.page03 .contentCenter .imgBox >view{
+  width: 50%;
+  display: inline-block;
+  position: relative;
+}
+.page03 .contentCenter .imgBox >view image{
+  height: 208rpx;
+  width: 100%;
+  vertical-align: middle;
+}
+.page03 .contentCenter .imgBox >view .detailText{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(145,196,187,.5);
+  padding: 0;
+  text-align: center;
+}
+/*page04  */
+.page04 .item{
+  position: relative;
+  display: inline-block;
+}
+.page04 .item image{
+  vertical-align: middle;
+}
+.page04 .item .detailText{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(145,196,187,.5);
+  padding: 0;
+  text-align: center;
+}
+.page04 .img-1{
+  float: left;
+}
+.page04 .img-1 image{
+  width: 100%;
+  height: 420rpx;
+}
+.page04 .img-2 image{
+  width: 100%;
+  height: 210rpx;
+}
+.page04 .img-3 image{
+  width: 100%;
+  height: 210rpx;
+}
+.page04 .img-4 image{
+  width: 100%;
+  height: 210rpx;
+}
+.page04 .img-5 image{
+  width: 100%;
+  height: 210rpx;
+}
+.page04 .img-6 image{
+  width: 100%;
+  height: 210rpx;
+}
+.page04 .img-7 image{
+  width: 100%;
+  height: 210rpx;
+}

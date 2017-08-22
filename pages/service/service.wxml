@@ -1,3 +1,6 @@
+<import src="/template/banner.wxml"/>
+<template is="banner" data="{{...banner}}" />
+
 <view class="server">
   <block wx:for="{{content}}" wx:key="content">
     <view class="content" bindtap="openS_tend"
@@ -7,3 +10,9 @@
     </view>
   </block>
 </view>
+
+<import src="/template/twocode.wxml"/>
+<template is="twocode" data="{{...twocode}}"></template>
+
+<import src="/template/footer" />
+<template is="footer" data="{{barUp:barUp,navImg: nav}}"></template>

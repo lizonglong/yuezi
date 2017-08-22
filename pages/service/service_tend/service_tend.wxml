@@ -1,5 +1,7 @@
+<import src="/template/banner.wxml"/>
+<template is="banner" data="{{...banner}}" />
 <view class="careSystem" >
-  
+
   <view class="one main">
     <text class="{{!arr[id][0].title? '' :'text'}}">{{arr[id][0].title}}</text>
     <view class="{{!arr[id][0].subTitle? '' :'subTitle'}}">{{arr[id][0].subTitle}}</view>
@@ -17,13 +19,14 @@
   </view>
   <swiper circular="true"
   autoplay="true" interval="2000" duration="1000"
-  class="{{arr[id][2].swiper? '': 'bannerImg' }}"
+  class="{{arr[id][2].swiper? '': 'bannerImg' }} swiper"
   >
     <block wx:for="{{arr[id][2].swiper}}" wx:key="swiper">
-      <swiper-item>
+      <swiper-item class="swiper-item">
         <image src="{{item.imgUrls? item.imgUrls:''}}" class="{{item.imgUrls? '':'bannerImg'}}" />
         <text class="detailText">{{item.text}}</text>
       </swiper-item>
+      
     </block>
   </swiper>
 
@@ -72,5 +75,11 @@
         </view>
       </view>
     </view>
+
+<import src="/template/twocode.wxml"/>
+<template is="twocode" data="{{...twocode}}"></template>
+
+<import src="/template/footer" />
+<template is="footer" data="{{barUp:barUp,navImg: nav}}"></template>
 </view>
 

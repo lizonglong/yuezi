@@ -1,14 +1,14 @@
 <!--二维码模板  -->
 <template name='twocode'>
   <view class="twoCode">
-  <view class="code">
-    <block wx:for="{{twoCode}}" wx:key="twocode">
-    <view>
-      <image src="{{item.imgPath}}" ></image>
-      <text>{{item.text}}</text>
+    <view class="code">
+      <block wx:for="{{twoCode}}" wx:key="twocode">
+      <view>
+        <image src="{{item.imgPath}}" ></image>
+        <text>{{item.text}}</text>
+      </view>
+      </block>
     </view>
-    </block>
-  </view>
     <text>{{bottomText}}</text>
   </view>
 </template>
