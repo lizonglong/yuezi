@@ -34,11 +34,11 @@ page{
 .subTitle{
   margin: 0 auto 40rpx auto;
   color: #8b8b8b;
-  font-size: 28rpx;
+  font-size: 24rpx;
 }
 /*p  */
 .detailText{
-  font-size:25rpx;
+  font-size:28rpx;
   line-height: 40rpx;
   text-indent: 50rpx;
   text-align: left;

@@ -59,7 +59,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/*排版为3张图  */
+/*排版为3张直角图  */
 .content03{
   margin-top: 20rpx;
 }
@@ -73,6 +73,7 @@
   width:220rpx;
   text-align: center;
   overflow: hidden;
+  margin-bottom: 10rpx;
 }
 .content03 .item03 .item image{
   width:220rpx;
@@ -97,7 +98,7 @@
 .bannerImg{
   display: none;
 }
-/*排版为2张图  */
+/*排版为2张直角图  */
 .content02{
   margin-top: 20rpx;
 }
@@ -111,6 +112,7 @@
   width:340rpx;
   text-align: center;
   overflow: hidden;
+  margin-bottom: 10rpx;
 }
 .content02 .item03 .item image{
   width:340rpx;
@@ -125,7 +127,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/*排版为2张图 && 高度有变化的图  */
+/*排版为2张直角图 && 高度有变化的图  */
 .content02.content02_2 .item03 .item image{
   height:400rpx;
 }

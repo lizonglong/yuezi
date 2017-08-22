@@ -2,7 +2,7 @@
 <template is="banner" data="{{...banner}}" />
 <view class="careSystem" >
 
-  <view class="one main">
+  <view class="one main">   <!--单个圆角图 -->
     <text class="{{!arr[id][0].title? '' :'text'}}">{{arr[id][0].title}}</text>
     <view class="{{!arr[id][0].subTitle? '' :'subTitle'}}">{{arr[id][0].subTitle}}</view>
     <image class="{{arr[id][0].imgUrl? '':'bannerImg'}}" src="{{arr[id][0].imgUrl? arr[id][0].imgUrl:''}}"></image>
@@ -17,7 +17,8 @@
         </view>
       </view>
   </view>
-  <swiper circular="true"
+                          <!--中间轮播图 -->
+  <swiper circular="true"   
   autoplay="true" interval="2000" duration="1000"
   class="{{arr[id][2].swiper? '': 'bannerImg' }} swiper"
   >
@@ -32,7 +33,7 @@
 
   
   <block wx:for="{{arr[id][3]}}" wx:key="block">
-    <view class="{{!item[0].content2? '' :'content2'}} main" >
+    <view class="{{!item[0].content2? '' :'content2'}} main" >    <!-- 两个圆角图-->
       <text class="{{!item[0].content2.title? '' :'text'}}">{{item[0].content2.title}}</text>
       <view class="subTitle">{{item[0].content2.subTitle}}</view>
       <view class="item03">
@@ -42,7 +43,7 @@
         </view>
       </view>
     </view>
-    <view class="{{!item[1].content03? '' :'content03'}} main" >
+    <view class="{{!item[1].content03? '' :'content03'}} main" >  <!-- 三个直角图-->
       <text class="{{!item[1].content03.title? '' :'text'}}">{{item[1].content03.title}}</text>
       <view class="subTitle">{{item[1].content03.subTitle}}</view>
       <view class="item03">
@@ -52,7 +53,7 @@
         </view>
       </view>
     </view>
-    <image class="{{item[2]? '':'bannerImg'}}" src="{{item[2]? item[2]:''}}"></image>
+    <image class="{{item[2]? '':'bannerImg'}}" src="{{item[2]? item[2]:''}}"></image> <!--中间banner图 -->
     <view class="{{!item[3].content02? '' :'content02'}} main">
       <text class="{{!item[3].content02.title? '' :'text'}}">{{item[3].content02.title}}</text>
       <view class="subTitle">{{item[2].content02.subTitle}}</view>
@@ -65,7 +66,7 @@
     </view>
   </block> 
 
-  <view class="{{!arr[id][4].content02? '' :'content02'}} main content02_2">
+  <view class="{{!arr[id][4].content02? '' :'content02'}} main content02_2">  <!--尾部两个直角长图 -->
       <text class="{{!arr[id][4].content02.title? '' :'text'}}">{{arr[id][4].content02.title}}</text>
       <view class="subTitle">{{arr[id][4].content02.subTitle}}</view>
       <view class="item03">

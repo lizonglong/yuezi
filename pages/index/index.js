@@ -26,15 +26,17 @@ Page({
       {
         url:'/images/w-homepage_09.png',
         text: '专业服务体系',
-        pageUrl: "/pages/profession/profession"
+        pageUrl: "/pages/service/service"
       },
       {
         url: '/images/w-homepage_11.png',
-        text: '分店介绍'
+        text: '分店介绍',
+        
       },
       {
         url: '/images/w-homepage_17.png',
-        text: "套餐服务"
+        text: "套餐服务",
+        pageUrl: "/pages/package/package"
       },
       {
         url: '/images/w-homepage_18.png',
