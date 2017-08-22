@@ -2,15 +2,15 @@
   <view class="footer">
     <view class="footer-bar">
       <view class="foot-left" style="flex:1;" data-index="0" bindtap="barClick">
-        <image src="/images/w-首页06_03.png"></image>
+        <image src="/images/w-homepage06_03.png"></image>
         <text>联系电话</text>
       </view>
       <view class="foot-center" style="flex:1" data-index="1" bindtap="barClick">
-        <image src="/images/w-首页06_05.png"></image>
+        <image src="/images/w-homepage06_05.png"></image>
         <text>预约看店</text>
       </view>
       <view class="foot-right" style="flex:1" data-index="2" bindtap="barClick">
-        <image src="/images/w-首页06_07.png"></image>
+        <image src="/images/w-homepage06_07.png"></image>
         <text>导航</text>
       </view>
     </view>
@@ -22,7 +22,7 @@
         </view>
       </block>
       <view class="nav-list">
-        <image src="/images/w-首页_101.png"></image>
+        <image src="/images/w-homepage_101.png"></image>
         <view>关闭</view>
       </view>
     </view>

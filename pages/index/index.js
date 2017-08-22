@@ -3,8 +3,8 @@ Page({
   data: {
     banner: {
       imgUrls: [
-        '/images/w-首页_02.jpg',
-        '/images/w-首页_02_02.jpg',
+        '/images/w-homepage_02.jpg',
+        '/images/w-homepage_02_02.jpg',
       ],
       indicatorDots: false,
       autoplay: true,
@@ -14,51 +14,51 @@ Page({
     },
     nav: [
       {
-        url: '/images/w-首页_05.png',
+        url: '/images/w-homepage_05.png',
         text: '首页',
         pageUrl:"/pages/index/index"
       },
       {
-        url: '/images/w-首页_07.png',
+        url: '/images/w-homepage_07.png',
         text: "关于仕馨",
         pageUrl: "/pages/about/about"
       }, 
       {
-        url:'/images/w-首页_09.png',
+        url:'/images/w-homepage_09.png',
         text: '专业服务体系',
         pageUrl: "/pages/profession/profession"
       },
       {
-        url: '/images/w-首页_11.png',
+        url: '/images/w-homepage_11.png',
         text: '分店介绍'
       },
       {
-        url: '/images/w-首页_17.png',
+        url: '/images/w-homepage_17.png',
         text: "套餐服务"
       },
       {
-        url: '/images/w-首页_18.png',
+        url: '/images/w-homepage_18.png',
         text: "妈妈见证"
       },
       {
-        url: '/images/w-首页_19.png',
+        url: '/images/w-homepage_19.png',
         text: "月子资讯"
       },
       {
-        url: '/images/w-首页_20.png',
+        url: '/images/w-homepage_20.png',
         text: "月子资讯"
       }
     ],
     videoUrl: 'http://ugcdl.video.gtimg.com/flv/162/228/e01560xy74g.m701.mp4?vkey=61524392932B184B242FDDA0BF2F717FA444F74D626D8AC4736DAF84A489BA78AA317F2D744B6F3B6DBA486B35E51CA2FF356D874C977E6833FF1575887390E2DB6EFF871B4A4235429076C47B6540C0E654AFA467C856E1CDEEE3DAD55DFF544723CEB424C26559243A8F750CE1F4F4CB52D217CADF0C91&br=29&platform=2&fmt=auto&level=0&sdtfrom=v5010&guid=06b741038042432903df98ac5a573465',
     branch:{
       imgUrls:[
-        '/images/w-首页_01.jpg',
-        '/images/w-首页_01_02.jpg',
-        '/images/w-首页_01_03.jpg',
-        '/images/w-首页_01_04.jpg',
-        '/images/w-首页_01_02.jpg',
-        '/images/w-首页_01_03.jpg',
-        '/images/w-首页_01_04.jpg'
+        '/images/w-homepage_01.jpg',
+        '/images/w-homepage_01_02.jpg',
+        '/images/w-homepage_01_03.jpg',
+        '/images/w-homepage_01_04.jpg',
+        '/images/w-homepage_01_02.jpg',
+        '/images/w-homepage_01_03.jpg',
+        '/images/w-homepage_01_04.jpg'
       ],
       indicatorDots: false,
       autoplay: false,
@@ -68,50 +68,50 @@ Page({
     service:[
       [
         {
-          imgUrl: "/images/w-首页_36.jpg",
+          imgUrl: "/images/w-homepage_36.jpg",
           text: "新生儿健康护理",
           textEn: "POSTPARTUM MOTHER RECOVERS"
         },
         {
-          imgUrl: "/images/w-首页_38.jpg",
+          imgUrl: "/images/w-homepage_38.jpg",
           text: "中医调理保健",
           textEn: "CHINESE MEDICINE"
         }
       ],
       [
         {
-          imgUrl: "/images/w-首页_40.jpg",
+          imgUrl: "/images/w-homepage_40.jpg",
           text: "产后妈妈康复",
           textEn: "PPOSTPARTUM MOTHER RECOVERS"
         }
       ],
       [
         {
-          imgUrl: "/images/w-首页_43.jpg",
+          imgUrl: "/images/w-homepage_43.jpg",
           text: "母婴专业营养",
           textEn: "PROFESSIONAL NUTRITION"
         },
         {
-          imgUrl: "/images/w-首页_45.jpg",
+          imgUrl: "/images/w-homepage_45.jpg",
           text: "产后妈妈塑性美丽",
           textEn: "MATHOR PRASTIC"
         }
       ],
       [
         {
-          imgUrl: "/images/w-首页_49.jpg",
+          imgUrl: "/images/w-homepage_49.jpg",
           text: "新生儿早期智力开发",
           textEn: "EARLY EDUCATION"
         },
         {
-          imgUrl: "/images/w-首页_51.jpg",
+          imgUrl: "/images/w-homepage_51.jpg",
           text: "立体式院感防御",
           textEn: "DEFENSE SYSTEM"
         }
       ],
       [
         {
-          imgUrl: "/images/w-首页_55.jpg",
+          imgUrl: "/images/w-homepage_55.jpg",
           text: "全天候安保无缝体系",
           textEn: "SECURITY STYSTEM"
         }
@@ -122,19 +122,19 @@ Page({
         select: true,
         list: [
           {
-            imgUrl: "/images/w-首页_59.png",
+            imgUrl: "/images/w-homepage_59.png",
             content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
           },
           {
-            imgUrl: "/images/w-首页_62.png",
+            imgUrl: "/images/w-homepage_62.png",
             content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
           },
           {
-            imgUrl: "/images/w-首页_64.png",
+            imgUrl: "/images/w-homepage_64.png",
             content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
           },
           {
-            imgUrl: "/images/w-首页_66.png",
+            imgUrl: "/images/w-homepage_66.png",
             content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
           }
         ]
@@ -143,19 +143,19 @@ Page({
         select: false,
         list:[
           {
-            imgUrl: "/images/w-首页1_59.png",
+            imgUrl: "/images/w-homepage1_59.png",
             content:'分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
           },
           {
-            imgUrl: "/images/w-首页1_62.png",
+            imgUrl: "/images/w-homepage1_62.png",
             content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
           },
           {
-            imgUrl: "/images/w-首页1_64.png",
+            imgUrl: "/images/w-homepage1_64.png",
             content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
           },
           {
-            imgUrl: "/images/w-首页1_66.png",
+            imgUrl: "/images/w-homepage1_66.png",
             content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
           }
         ]
@@ -164,19 +164,19 @@ Page({
         select: false,
         list: [
           {
-            imgUrl: "/images/w-首页2_59.png",
+            imgUrl: "/images/w-homepage2_59.png",
             content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
           },
           {
-            imgUrl: "/images/w-首页2_62.png",
+            imgUrl: "/images/w-homepage2_62.png",
             content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
           },
           {
-            imgUrl: "/images/w-首页2_64.png",
+            imgUrl: "/images/w-homepage2_64.png",
             content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
           },
           {
-            imgUrl: "/images/w-首页2_66.png",
+            imgUrl: "/images/w-homepage2_66.png",
             content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
           }
         ]

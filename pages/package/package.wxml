@@ -1,0 +1,83 @@
+<view class="package main">
+  <import src="/template/banner.wxml"/>
+  <template is="banner" data="{{...banner}}" />
+  <view class="page01 page">
+    <text class="text">居住环境</text>
+    <view class="subTitle">DWELLING ENVIRONMENT</view>
+    <image wx:for="{{page01}}" wx:key="page01" src="{{item}}"></image>
+  </view>
+  <view class="page02 page">
+    <text class="text">妈妈项目</text>
+    <view class="subTitle">MOTHER PROJECT</view>
+    
+    <view class="content" >
+      <view wx:for="{{page02}}" wx:key="content" class="item">
+      <image src="{{item.imgUrl}}"></image>
+       <text class="detailText">{{item.text}}</text> 
+      </view>
+    </view>
+  </view>
+  <view class="page03 page">
+    <text class="text">定制营养餐</text>
+    <view class="subTitle">DWELLING ENVIRONMENT</view>
+    <view class="content2">
+      <view class="block">
+        <image src="/images/package_25.jpg"></image>
+        <text class="detailText">妈妈月子餐</text>
+      </view>
+      <view class="block">
+        <image src="/images/package_27.jpg"></image>
+        <text class="detailText">营养调理</text>
+      </view>
+    </view>
+    <view class="contentCenter">
+      <image src="/images/package_31.jpg"></image>
+      <view class="blueBanner"></view>
+      <view class="imgBox">
+        <view class="" wx:for="{{page03}}">
+          <image src="{{item.imgUrl}}"></image>
+          <text class="detailText">{{item.text}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="page04 page">
+    <text class="text">其他服务</text>
+    <view class="subTitle">OTHER SERVICES</view>
+    <view class="img-1 item" style="width: 260rpx;">
+      <image src="/images/package_38.jpg"></image>
+      <text class="detailText">摄影服务</text>
+    </view>
+    <view class="img-2 item" style="width: 270rpx;">
+      <image src="/images/package_39.jpg"></image>
+      <text class="detailText">商务车接送</text>
+    </view>
+    <view class="img-3 item" style="width: 220rpx;">
+      <image src="/images/package_40.jpg"></image>
+      <text class="detailText">陪护餐</text>
+    </view>
+    <view class="img-4 item" style="width: 220rpx;">
+      <image src="/images/package_41.jpg"></image>
+      <text class="detailText">家属陪住</text>
+    </view>
+    <view class="img-5 item" style="width: 270rpx;">
+      <image src="/images/package_42.jpg"></image>
+      <text class="detailText">满月party</text>
+    </view>
+    <view class="img-6 item" style="width: 340rpx;">
+      <image src="/images/package_43.jpg"></image>
+      <text class="detailText">品牌生活用品</text>
+    </view>
+    <view class="img-7 item" style="width: 410rpx;">
+      <image src="/images/package_44.jpg"></image>
+      <text class="detailText">宝宝体质评估</text>
+    </view>
+    
+  </view>
+
+  <import src="/template/twocode.wxml"/>
+<template is="twocode" data="{{...twocode}}"></template>
+
+<import src="/template/footer" />
+<template is="footer" data="{{barUp:barUp,navImg: nav}}"></template>
+</view>

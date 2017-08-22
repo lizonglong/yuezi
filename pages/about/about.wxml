@@ -1,3 +1,6 @@
+<!--banner  -->
+ <import src="/template/banner.wxml"/> 
+<template is="banner" data="{{...banner}}"></template>  
 
 
 <!--page01  -->
@@ -83,7 +86,10 @@
 
 
 
-<!--二维码模板  -->
+<!--二维码  -->
 
 <import src="/template/twocode.wxml"/>
-<template is="twocode" data="{{...twocode}}" /> 
+<template is="twocode" data="{{...twocode}}"></template> 
+
+<import src="/template/footer" />
+<template is="footer" data="{{barUp:barUp,navImg: nav}}"></template>

@@ -1,2 +1,85 @@
-<!--pages/service/service_tend/service_tend.wxml-->
-<text>pages/service/service_tend/service_tend.wxml</text>
+<import src="/template/banner.wxml"/>
+<template is="banner" data="{{...banner}}" />
+<view class="careSystem" >
+
+  <view class="one main">
+    <text class="{{!arr[id][0].title? '' :'text'}}">{{arr[id][0].title}}</text>
+    <view class="{{!arr[id][0].subTitle? '' :'subTitle'}}">{{arr[id][0].subTitle}}</view>
+    <image class="{{arr[id][0].imgUrl? '':'bannerImg'}}" src="{{arr[id][0].imgUrl? arr[id][0].imgUrl:''}}"></image>
+    </view>
+    <view class="{{!arr[id][1].content2? '' :'content2'}} main" >
+      <text class="{{!arr[id][1].content2.title? '' :'text'}}">{{arr[id][1].content2.title}}</text>
+      <view class="{{!arr[id][1].content2.subTitle? '' :'subTitle'}}">{{arr[id][1].content2.subTitle}}</view>
+      <view class="item03">
+        <view class="item" wx:for="{{arr[id][1].content2.item}}" wx:key="item">
+          <image src="{{item.imgUrl}}"></image>
+          <text class="detailText">{{item.text}}</text>
+        </view>
+      </view>
+  </view>
+  <swiper circular="true"
+  autoplay="true" interval="2000" duration="1000"
+  class="{{arr[id][2].swiper? '': 'bannerImg' }} swiper"
+  >
+    <block wx:for="{{arr[id][2].swiper}}" wx:key="swiper">
+      <swiper-item class="swiper-item">
+        <image src="{{item.imgUrls? item.imgUrls:''}}" class="{{item.imgUrls? '':'bannerImg'}}" />
+        <text class="detailText">{{item.text}}</text>
+      </swiper-item>
+      
+    </block>
+  </swiper>
+
+  
+  <block wx:for="{{arr[id][3]}}" wx:key="block">
+    <view class="{{!item[0].content2? '' :'content2'}} main" >
+      <text class="{{!item[0].content2.title? '' :'text'}}">{{item[0].content2.title}}</text>
+      <view class="subTitle">{{item[0].content2.subTitle}}</view>
+      <view class="item03">
+        <view class="item" wx:for="{{item[0].content2.item}}" wx:key="item">
+          <image src="{{item.imgUrl}}"></image>
+          <text class="detailText">{{item.text}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="{{!item[1].content03? '' :'content03'}} main" >
+      <text class="{{!item[1].content03.title? '' :'text'}}">{{item[1].content03.title}}</text>
+      <view class="subTitle">{{item[1].content03.subTitle}}</view>
+      <view class="item03">
+        <view class="item" wx:for="{{item[1].content03.item}}" wx:key="item">
+          <image src="{{item.imgUrl}}"></image>
+          <text class="detailText">{{item.text}}</text>
+        </view>
+      </view>
+    </view>
+    <image class="{{item[2]? '':'bannerImg'}}" src="{{item[2]? item[2]:''}}"></image>
+    <view class="{{!item[3].content02? '' :'content02'}} main">
+      <text class="{{!item[3].content02.title? '' :'text'}}">{{item[3].content02.title}}</text>
+      <view class="subTitle">{{item[2].content02.subTitle}}</view>
+      <view class="item03">
+        <view class="item" wx:for="{{item[3].content02.item}}" wx:key="item">
+          <image src="{{item.imgUrl}}"></image>
+          <text class="detailText" >{{item.text}}</text>
+        </view>
+      </view>
+    </view>
+  </block> 
+
+  <view class="{{!arr[id][4].content02? '' :'content02'}} main content02_2">
+      <text class="{{!arr[id][4].content02.title? '' :'text'}}">{{arr[id][4].content02.title}}</text>
+      <view class="subTitle">{{arr[id][4].content02.subTitle}}</view>
+      <view class="item03">
+        <view class="item" wx:for="{{arr[id][4].content02.item}}" wx:key="item">
+          <image src="{{item.imgUrl}}"></image>
+          <text class="detailText" >{{item.text}}</text>
+        </view>
+      </view>
+    </view>
+
+<import src="/template/twocode.wxml"/>
+<template is="twocode" data="{{...twocode}}"></template>
+
+<import src="/template/footer" />
+<template is="footer" data="{{barUp:barUp,navImg: nav}}"></template>
+</view>
+
