@@ -5,6 +5,7 @@
 }
 .praise{
   padding: 20rpx;
+  margin-bottom: 120rpx;
 }
 .praise .praise-head .publc-btn{
   font-size: 24rpx;

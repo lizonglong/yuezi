@@ -76,6 +76,7 @@ swiper{
   text-align: center;
   color: #fff;
   z-index: 999;
+  font-size:34rpx;
 }
 .footer image{
   height:50rpx;
@@ -133,7 +134,6 @@ swiper{
 }
 .footer .footer-nav .nav-list{
   width: 33.3%;
-
 }
 .footer .footer-nav image{
   padding: 20rpx 0;
@@ -150,7 +150,7 @@ swiper{
   width: 0;
   border-left: 30rpx solid transparent;
   border-right: 30rpx solid transparent;
-  border-top: 30rpx solid #fff;
+  border-top: 30rpx solid #f9f7f6;
   border-bottom: none;
 }
 /*二维码  */

@@ -1,7 +1,7 @@
 <!--/pages/branch/branch_introduce.wxml-->
 <view class="container">
   <import src="/template/banner.wxml"/>
-  <template is="banner" data="{{...banner}}"></template>
+  <template wx:if="{{banner}}" is="banner" data="{{...banner}}"></template>
   <!-- 简介开始 -->
   <view class="intro">
     <view class="intro-msg">
@@ -13,17 +13,17 @@
           <text>{{item}}</text>
         </view>
       </block>
-      <template is="beyondbox" data="{{text:'height:130%',width:6}}"></template>
+      <template is="beyondbox" data="{{text:'height:130%',width:6,left:true}}"></template>
     </view>
-    <image src="/images/w-分店介绍-云山店_03.jpg"></image>
+    <image src="{{contentImg}}"></image>
   </view>
   <!-- 简介结束 -->
   <!-- 房间环境开始 -->
   <view class="environment">
     <view class="text">房间环境</view>
     <view class="subTitle">ROOM ENVIRONMENT</view>
-    <template is="bannerDrap" data="{{...bannerDrap}}"></template>
-    <template is="bannerDrap" data="{{...bannerDrap01}}"></template>
+    <template wx:if="{{bannerDrap}}" is="bannerDrap" data="{{...bannerDrap,left:true}}"></template>
+    <template wx:if="{{bannerDrap01}}" is="bannerDrap" data="{{...bannerDrap01}}"></template>
   </view>
   <!-- 房间环境结束 -->
   <!-- 照片墙 -->
@@ -41,7 +41,7 @@
 </view>
 <!-- 超出的框模板 -->
 <template name="beyondbox">
-  <view class="beyond-box" style="box-shadow: inset -{{width-2}}rpx -{{width-2}}rpx  0 #74c5be,inset {{width}}rpx {{width}}rpx  0 #74c5be;{{text}}">
+  <view class="beyond-box" style="{{left?'left:0':'right:0'}};box-shadow: inset -{{width-2}}rpx -{{width-2}}rpx  0 #74c5be,inset {{width}}rpx {{width}}rpx  0 #74c5be;{{text}}">
   </view>
 </template>
 <!-- 拖动轮播 -->
@@ -50,11 +50,15 @@
     indicator-active-color="{{indicatorActiveColor || '#000000'}}" autoplay="{{autoplay}}" circular="{{circular}}" interval="{{interval}}" duration="{{duration}}">
     <block wx:for="{{imgMsg}}" wx:key="bannerDrap">
       <swiper-item>
-        <view class="img-text" >
+        <view class="img-text" wx:if="{{left}}">
+          <text>{{item.text}}</text>
+          <template is="beyondbox" data="{{text:'width:120%',width:'4',left:left}}"></template>
+        </view>
+        <image src="{{item.url}}" class="slide-image"/>
+        <view class="img-text" wx:if="{{!left}}">
           <text>{{item.text}}</text>
           <template is="beyondbox" data="{{text:'width:120%',width:'4'}}"></template>
         </view>
-        <image src="{{item.url}}" class="slide-image"/>
       </swiper-item>
     </block>
   </swiper>
@@ -71,6 +75,8 @@
                   <view class="wall-col01" style="flex:1;font-size:0">
                     <image src="{{item.url}}" style="height:{{340/item2.length}}rpx"></image>
                     <view class="wall-text" wx:if="{{item.text}}">{{item.text}}</view>
+                     <view class="wall-center-text" wx:if="{{item.center}}">{{item.center[0]}}</view>
+                    <view class="wall-center-text" wx:if="{{item.center}}">{{item.center[1]}}</view> 
                   </view>
                 </block>
               </view>

@@ -38,12 +38,14 @@
         </view>
       </view>
       <view class="video-list">
-        <block wx:for="{{praise[praiseList]}}">
+        <block wx:for="{{praise[praiseList]}}" wx:key="list">
           <template is="praiseVideo" data="{{...item}}"></template>
         </block>
       </view>
     </view>
   </view>
+  <import src="/template/footer.wxml" />
+  <template is="footer" data="{{barUp:barUp,navImg: nav}}"></template>
 </view>
 <!-- 口碑列表 -->
 <template name="praise">
@@ -52,7 +54,7 @@
       <image src="{{text.imgUrl}}"></image>
     </view>
     <view class="list-content">
-      <image src="/images/w-首页_10.png"></image>
+      <image src="/images/w-homepage_10.png"></image>
       <view>{{text.content}}</view>
     </view>
   </view>

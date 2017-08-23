@@ -1,15 +1,16 @@
 // pages/praise/praise.js
+var util = require('../../utils/util');
 Page({
-
   data:{
+    pageIndex: 5,
     praiseList:1,
     praiseIndex:0,
     praiseCur:0,
     banner: {
       imgUrls: [
-        '/images/w-首页_02_02.jpg',
-        '/images/w-首页_02.jpg',
-        '/images/w-首页_02_01.png'
+        '/images/w-homepage_02_02.jpg',
+        '/images/w-homepage_02.jpg',
+        '/images/w-首页_02_01.png',
       ],
       indicatorDots: true,
       indicatorActiveColor: '#007aff',
@@ -18,6 +19,7 @@ Page({
       duration: 1000,
       circular: true
     },
+    nav: util.nav,
     praise: [
       [
         {
@@ -55,324 +57,326 @@ Page({
       ],
       [
         {
-          imgUrl: "/images/w-首页_59.png",
+          imgUrl: "/images/w-homepage_59.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_62.png",
+          imgUrl: "/images/w-homepage_62.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_64.png",
+          imgUrl: "/images/w-homepage_64.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_66.png",
+          imgUrl: "/images/w-homepage_66.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_59.png",
+          imgUrl: "/images/w-homepage_59.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_62.png",
+          imgUrl: "/images/w-homepage_62.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_64.png",
+          imgUrl: "/images/w-homepage_64.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_66.png",
+          imgUrl: "/images/w-homepage_66.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_59.png",
+          imgUrl: "/images/w-homepage_59.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_62.png",
+          imgUrl: "/images/w-homepage_62.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_64.png",
+          imgUrl: "/images/w-homepage_64.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_66.png",
+          imgUrl: "/images/w-homepage_66.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_59.png",
+          imgUrl: "/images/w-homepage_59.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_62.png",
+          imgUrl: "/images/w-homepage_62.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_64.png",
+          imgUrl: "/images/w-homepage_64.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_66.png",
+          imgUrl: "/images/w-homepage_66.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_59.png",
+          imgUrl: "/images/w-homepage_59.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_59.png",
+          imgUrl: "/images/w-homepage_59.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_62.png",
+          imgUrl: "/images/w-homepage_62.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_64.png",
+          imgUrl: "/images/w-homepage_64.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_66.png",
+          imgUrl: "/images/w-homepage_66.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_59.png",
+          imgUrl: "/images/w-homepage_59.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_62.png",
+          imgUrl: "/images/w-homepage_62.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_64.png",
+          imgUrl: "/images/w-homepage_64.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_66.png",
+          imgUrl: "/images/w-homepage_66.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_59.png",
+          imgUrl: "/images/w-homepage_59.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_62.png",
+          imgUrl: "/images/w-homepage_62.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_64.png",
+          imgUrl: "/images/w-homepage_64.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_66.png",
+          imgUrl: "/images/w-homepage_66.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_59.png",
+          imgUrl: "/images/w-homepage_59.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_62.png",
+          imgUrl: "/images/w-homepage_62.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_64.png",
+          imgUrl: "/images/w-homepage_64.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_66.png",
+          imgUrl: "/images/w-homepage_66.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_59.png",
+          imgUrl: "/images/w-homepage_59.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_62.png",
+          imgUrl: "/images/w-homepage_62.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_64.png",
+          imgUrl: "/images/w-homepage_64.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_66.png",
+          imgUrl: "/images/w-homepage_66.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_59.png",
+          imgUrl: "/images/w-homepage_59.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_62.png",
+          imgUrl: "/images/w-homepage_62.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_64.png",
+          imgUrl: "/images/w-homepage_64.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_66.png",
+          imgUrl: "/images/w-homepage_66.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_59.png",
+          imgUrl: "/images/w-homepage_59.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_62.png",
+          imgUrl: "/images/w-homepage_62.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_64.png",
+          imgUrl: "/images/w-homepage_64.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_66.png",
+          imgUrl: "/images/w-homepage_66.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_59.png",
+          imgUrl: "/images/w-homepage_59.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_59.png",
+          imgUrl: "/images/w-homepage_59.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_62.png",
+          imgUrl: "/images/w-homepage_62.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_64.png",
+          imgUrl: "/images/w-homepage_64.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_66.png",
+          imgUrl: "/images/w-homepage_66.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_59.png",
+          imgUrl: "/images/w-homepage_59.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_62.png",
+          imgUrl: "/images/w-homepage_62.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_64.png",
+          imgUrl: "/images/w-homepage_64.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_66.png",
+          imgUrl: "/images/w-homepage_66.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_59.png",
+          imgUrl: "/images/w-homepage_59.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_62.png",
+          imgUrl: "/images/w-homepage_62.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_64.png",
+          imgUrl: "/images/w-homepage_64.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_66.png",
+          imgUrl: "/images/w-homepage_66.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_59.png",
+          imgUrl: "/images/w-homepage_59.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_62.png",
+          imgUrl: "/images/w-homepage_62.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_64.png",
+          imgUrl: "/images/w-homepage_64.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_66.png",
+          imgUrl: "/images/w-homepage_66.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_59.png",
+          imgUrl: "/images/w-homepage_59.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_62.png",
+          imgUrl: "/images/w-homepage_62.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_64.png",
+          imgUrl: "/images/w-homepage_64.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_66.png",
+          imgUrl: "/images/w-homepage_66.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_59.png",
+          imgUrl: "/images/w-homepage_59.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_62.png",
+          imgUrl: "/images/w-homepage_62.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_64.png",
+          imgUrl: "/images/w-homepage_64.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页_66.png",
+          imgUrl: "/images/w-homepage_66.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         }
       ],
       [
         {
-          imgUrl: "/images/w-首页1_59.png",
+          imgUrl: "/images/w-homepage1_59.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页1_62.png",
+          imgUrl: "/images/w-homepage1_62.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页1_64.png",
+          imgUrl: "/images/w-homepage1_64.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页1_66.png",
+          imgUrl: "/images/w-homepage1_66.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         }
       ],
       [
         {
-          imgUrl: "/images/w-首页2_59.png",
+          imgUrl: "/images/w-homepage2_59.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页2_62.png",
+          imgUrl: "/images/w-homepage2_62.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页2_64.png",
+          imgUrl: "/images/w-homepage2_64.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         },
         {
-          imgUrl: "/images/w-首页2_66.png",
+          imgUrl: "/images/w-homepage2_66.png",
           content: '分享今天受邀到仕馨高端月子会所为满月的轩Baby布置满月甜品桌，也谢谢宝宝爸爸妈妈信任选择，世界......'
         }
       ]
     ]
   },
+  navClick: util.navClick,
+  barClick: util.barClick,
   // 类型选择点击事件
   praiseCheck: function(ev){
     var index = parseInt(ev.currentTarget.dataset.index);

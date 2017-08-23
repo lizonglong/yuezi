@@ -1,6 +1,8 @@
 var app=getApp();
+var util = require('../../utils/util');
 Page({
   data:{
+    pageIndex:2,
     content:[
       {
         imgPath:"/images/professionalSystem_03.jpg",
@@ -67,65 +69,11 @@ Page({
       ],
       bottomText: "Copyright©2011 仕馨月子会所 (粤ICP备17008523号-1)"
     },
-    nav: [
-      {
-        url: '/images/w-homepage_05.png',
-        text: '首页',
-        pageUrl: "/pages/index/index"
-      },
-      {
-        url: '/images/w-homepage_07.png',
-        text: "关于仕馨",
-        pageUrl: "/pages/about/about"
-      },
-      {
-        url: '/images/w-homepage_09.png',
-        text: '专业服务体系',
-        pageUrl: "/pages/profession/profession"
-      },
-      {
-        url: '/images/w-homepage_11.png',
-        text: '分店介绍'
-      },
-      {
-        url: '/images/w-homepage_17.png',
-        text: "套餐服务"
-      },
-      {
-        url: '/images/w-homepage_18.png',
-        text: "妈妈见证"
-      },
-      {
-        url: '/images/w-homepage_19.png',
-        text: "月子资讯"
-      },
-      {
-        url: '/images/w-homepage_20.png',
-        text: "月子资讯"
-      }
-    ],
-    
+    nav: util.nav
   },
 
-  barClick: function (ev) {
-    console.log(ev)
-    var index = ev.currentTarget.dataset.index;
-    if (index == 0) {
-
-    } else if (index == 1) {
-
-    } else {
-      this.data.barShow = !this.data.barShow;
-      var animation = wx.createAnimation({
-        duration: 500,
-        timingFunction: 'ease-in-out'
-      });
-      animation.bottom(this.data.barShow ? "134rpx" : "-500rpx").step();
-      this.setData({
-        barUp: animation.export()
-      })
-    }
-  },
+  barClick: util.barClick,
+  navClick: util.navClick,
   //点击事件
 
   //跳到service_tend
