@@ -4,7 +4,17 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.server .content image{
+.server .content{
   width:340rpx;
+  display: inline-block;
+  margin-bottom: 10rpx;
+}
+.server .content image{
+  width:100%;
   height:200rpx;
+}
+.server .content .detailText{
+  padding: 0;
+  text-indent: 0;
+  text-align: center;
 }

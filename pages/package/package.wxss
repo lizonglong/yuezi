@@ -9,7 +9,7 @@
 /*page01*/
 .page01 image{
   width:177rpx;
-  height: 357rpx;
+  height: 352rpx;
 }
 /*page02*/
 .page02 .content{
@@ -30,10 +30,11 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: rgba(145,196,187,.5);
+  color: #fff;
+  background: rgba(145,196,187,.7);
   text-align: center;
-  padding: 10rpx 0 0 0;
-  
+  padding: 0;
+  text-indent: 0;
 }
 /*page03*/
 .page03 .content2{
@@ -88,9 +89,11 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: rgba(145,196,187,.5);
+  color: #fff;
+  background: rgba(145,196,187,.7);
   padding: 0;
   text-align: center;
+  text-indent: 0;
 }
 /*page04  */
 .page04 .item{
@@ -104,9 +107,11 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: rgba(145,196,187,.5);
+  color: #fff;
+  background: rgba(145,196,187,.7);
   padding: 0;
   text-align: center;
+  text-indent: 0;
 }
 .page04 .img-1{
   float: left;
