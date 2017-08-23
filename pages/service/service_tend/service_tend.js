@@ -14,76 +14,76 @@ Page({
                     subTitle: "Baby's daily professional care",
                     item: [
                       {
-                        imgUrl: "/images/careSystem_03.png",
+                        imgUrl: "/images/careSystem_03.jpg",
                         text: "黄疸监测"
                       },
                       {
-                        imgUrl: "/images/careSystem_05.png",
+                        imgUrl: "/images/careSystem_05.jpg",
                         text: "五官护理"
                       },
                       {
-                        imgUrl: "/images/careSystem_07.png",
+                        imgUrl: "/images/careSystem_07.jpg",
                         text: "红臀监测"
                       },
                       {
-                        imgUrl: "/images/careSystem_12.png",
+                        imgUrl: "/images/careSystem_12.jpg",
                         text: "脐部护理"
                       },
                       {
-                        imgUrl: "/images/careSystem_14.png",
+                        imgUrl: "/images/careSystem_14.jpg",
                         text: "入离院健康评估"
                       },
                       {
-                        imgUrl: "/images/careSystem_16.png",
+                        imgUrl: "/images/careSystem_16.jpg",
                         text: "宝宝就医提醒"
                       },
                       {
-                        imgUrl: "/images/careSystem_21.png",
+                        imgUrl: "/images/careSystem_21.jpg",
                         text: "24小时育婴托管服务"
                       },
                       {
-                        imgUrl: "/images/careSystem_23.png",
+                        imgUrl: "/images/careSystem_23.jpg",
                         text: "24小时宝宝观察"
                       },
                       {
-                        imgUrl: "/images/careSystem_25.png",
+                        imgUrl: "/images/careSystem_25.jpg",
                         text: "黄疸监测"
                       }
                     ]
                   }
                 },
-                "/images/careSystem_29.png", //中间图片位置
+                "/images/careSystem_29.jpg", //中间图片位置
                 {
                   content02: {
                     title: " 新生儿早教",
                     subTitle: "Neonatal early education",
                     item: [
                       {
-                        imgUrl: "/images/careSystem_32.png",
+                        imgUrl: "/images/careSystem_32.jpg",
                         text: "宝宝游泳"
                       },
                       {
-                        imgUrl: "/images/careSystem_34.png",
+                        imgUrl: "/images/careSystem_34.jpg",
                         text: "宝宝抚触"
                       },
                       {
-                        imgUrl: "/images/careSystem_38.png",
+                        imgUrl: "/images/careSystem_38.jpg",
                         text: "宝宝早早教"
                       },
                       {
-                        imgUrl: "/images/careSystem_39.png",
+                        imgUrl: "/images/careSystem_39.jpg",
                         text: "宝宝沐浴"
                       },
                       {
-                        imgUrl: "/images/careSystem_42.png",
+                        imgUrl: "/images/careSystem_42.jpg",
                         text: "宝宝0-6个月全脑早教课"
                       },
                       {
-                        imgUrl: "/images/careSystem_43.png",
+                        imgUrl: "/images/careSystem_43.jpg",
                         text: "离院后儿保"
                       },
                       {
-                        imgUrl: "/images/careSystem_47.png",
+                        imgUrl: "/images/careSystem_47.jpg",
                         text: "宝宝全智评估"
                       }
                     ]
@@ -106,11 +106,11 @@ Page({
                     subTitle: "Nutrition regulate",
                     item: [
                       {
-                        imgUrl: "/images/HealthCare_03.png",
+                        imgUrl: "/images/HealthCare_03.jpg",
                         text: "药善调理"
                       },
                       {
-                        imgUrl: "/images/HealthCare_05.png",
+                        imgUrl: "/images/HealthCare_05.jpg",
                         text: "高档炖品"
                       }
                     ]
@@ -122,31 +122,31 @@ Page({
                     subTitle: "Life care",
                     item: [
                       {
-                        imgUrl: "/images/HealthCare_10.png",
+                        imgUrl: "/images/HealthCare_10.jpg",
                         text: "局部中医推拿"
                       },
                       {
-                        imgUrl: "/images/HealthCare_12.png",
+                        imgUrl: "/images/HealthCare_12.jpg",
                         text: "脾胃双调"
                       },
                       {
-                        imgUrl: "/images/HealthCare_14.png",
+                        imgUrl: "/images/HealthCare_14.jpg",
                         text: "头颈舒压"
                       },
                       {
-                        imgUrl: "/images/HealthCare_20.png",
+                        imgUrl: "/images/HealthCare_20.jpg",
                         text: "中药封包"
                       },
                       {
-                        imgUrl: "/images/HealthCare_23.png",
+                        imgUrl: "/images/HealthCare_23.jpg",
                         text: "中药头部清洁"
                       },
                       {
-                        imgUrl: "/images/HealthCare_24.png",
+                        imgUrl: "/images/HealthCare_24.jpg",
                         text: "特制中药水擦澡"
                       },
                       {
-                        imgUrl: "/images/HealthCare_29.png",
+                        imgUrl: "/images/HealthCare_29.jpg",
                         text: "中药沐浴"
                       }
                     ]
@@ -162,7 +162,7 @@ Page({
             {
               title:"通乳服务",
               subTitle:"Milk services",
-              imgUrl:"/images/rehabilitationSystem_03.png"
+              imgUrl:"/images/rehabilitationSystem_03.jpg"
             },
             {
               content2: {
@@ -170,11 +170,11 @@ Page({
                 subTitle: "Specialist ward round",
                 item: [
                   {
-                    imgUrl: "/images/rehabilitationSystem_07.png",
+                    imgUrl: "/images/rehabilitationSystem_07.jpg",
                     text: "营养师查房"
                   },
                   {
-                    imgUrl: "/images/rehabilitationSystem_08.png",
+                    imgUrl: "/images/rehabilitationSystem_08.jpg",
                     text: "专家查房(中医专家，产科专家)"
                   }
                 ]
@@ -183,19 +183,19 @@ Page({
             {
               swiper:[
                 {
-                  imgUrls: "/images/rehabilitationSystem_12.png",
+                  imgUrls: "/images/rehabilitationSystem_12.jpg",
                   text:"仪器子宫修复"
                 },
                 {
-                  imgUrls: "/images/rehabilitationSystem_14.png",
+                  imgUrls: "/images/rehabilitationSystem_14.jpg",
                   text:"红外线艾灸"
                 },
                 {
-                  imgUrls: "/images/rehabilitationSystem_12.png",
+                  imgUrls: "/images/rehabilitationSystem_12.jpg",
                   text: "仪器子宫修复"
                 },
                 {
-                  imgUrls: "/images/rehabilitationSystem_14.png",
+                  imgUrls: "/images/rehabilitationSystem_14.jpg",
                   text: "红外线艾灸"
                 }
               ]
@@ -208,11 +208,11 @@ Page({
                     subTitle: "Nutrition regulate",
                     item: [
                       {
-                        imgUrl: "/images/rehabilitationSystem_19.png",
+                        imgUrl: "/images/rehabilitationSystem_19.jpg",
                         text: "药善调理"
                       },
                       {
-                        imgUrl: "/images/rehabilitationSystem_21.png",
+                        imgUrl: "/images/rehabilitationSystem_21.jpg",
                         text: "高档炖品"
                       }
                     ]
@@ -224,27 +224,27 @@ Page({
                     subTitle: "Life care",
                     item: [
                       {
-                        imgUrl: "/images/rehabilitationSystem_24.png",
+                        imgUrl: "/images/rehabilitationSystem_24.jpg",
                         text: "胸部保养"
                       },
                       {
-                        imgUrl: "/images/rehabilitationSystem_26.png",
+                        imgUrl: "/images/rehabilitationSystem_26.jpg",
                         text: "特制中药水擦澡"
                       },
                       {
-                        imgUrl: "/images/rehabilitationSystem_28.png",
+                        imgUrl: "/images/rehabilitationSystem_28.jpg",
                         text: "中药沐浴"
                       },
                       {
-                        imgUrl: "/images/rehabilitationSystem_32.png",
+                        imgUrl: "/images/rehabilitationSystem_32.jpg",
                         text: "中药头部清洁"
                       },
                       {
-                        imgUrl: "/images/rehabilitationSystem_34.png",
+                        imgUrl: "/images/rehabilitationSystem_34.jpg",
                         text: "体质评估分析"
                       },
                       {
-                        imgUrl: "/images/rehabilitationSystem_36.png",
+                        imgUrl: "/images/rehabilitationSystem_36.jpg",
                         text: "动态观测和伤口护理"
                       }
                     ]
@@ -257,19 +257,19 @@ Page({
                     subTitle: "Chinese Medicine",
                     item: [
                       {
-                        imgUrl: "/images/rehabilitationSystem_42.png",
+                        imgUrl: "/images/rehabilitationSystem_42.jpg",
                         text: "安保团队"
                       },
                       {
-                        imgUrl: "/images/rehabilitationSystem_44.png",
+                        imgUrl: "/images/rehabilitationSystem_44.jpg",
                         text: "24小时监控"
                       },
                       {
-                        imgUrl: "/images/rehabilitationSystem_48.png",
+                        imgUrl: "/images/rehabilitationSystem_48.jpg",
                         text: "出入登记"
                       },
                       {
-                        imgUrl: "/images/rehabilitationSystem_50.png",
+                        imgUrl: "/images/rehabilitationSystem_50.jpg",
                         text: "停车位"
                       }
                     ]
@@ -283,11 +283,11 @@ Page({
                     subTitle: "Nutrition regulate",
                     item: [
                       {
-                        imgUrl: "/images/rehabilitationSystem_53.png",
+                        imgUrl: "/images/rehabilitationSystem_53.jpg",
                         text: "药善调理"
                       },
                       {
-                        imgUrl: "/images/rehabilitationSystem_55.png",
+                        imgUrl: "/images/rehabilitationSystem_55.jpg",
                         text: "高档炖品"
                       }
                     ]
@@ -304,19 +304,19 @@ Page({
                 subTitle: "Chinese Medicine",
                 item: [
                   {
-                    imgUrl: "/images/rehabilitationSystem_60.png",
+                    imgUrl: "/images/rehabilitationSystem_60.jpg",
                     text: "软光子腰腹部收紧"
                   },
                   {
-                    imgUrl: "/images/rehabilitationSystem_63.png",
+                    imgUrl: "/images/rehabilitationSystem_63.jpg",
                     text: "全身十二经络疏通"
                   },
                   {
-                    imgUrl: "/images/rehabilitationSystem_66.png",
+                    imgUrl: "/images/rehabilitationSystem_66.jpg",
                     text: "仪器盆底肌修复"
                   },
                   {
-                    imgUrl: "/images/rehabilitationSystem_68.png",
+                    imgUrl: "/images/rehabilitationSystem_68.jpg",
                     text: "骨盆矫正"
                   }
                 ]
@@ -338,27 +338,27 @@ Page({
                     subTitle: "Neonatal early education",
                     item: [
                       {
-                        imgUrl: "/images/nutritionSystem_03.png",
+                        imgUrl: "/images/nutritionSystem_03.jpg",
                         text: "体质评估分析"
                       },
                       {
-                        imgUrl: "/images/nutritionSystem_05.png",
+                        imgUrl: "/images/nutritionSystem_05.jpg",
                         text: "入住期间营养餐单设计"
                       },
                       {
-                        imgUrl: "/images/nutritionSystem_09.png",
+                        imgUrl: "/images/nutritionSystem_09.jpg",
                         text: "秘制月子水"
                       },
                       {
-                        imgUrl: "/images/nutritionSystem_11.png",
+                        imgUrl: "/images/nutritionSystem_11.jpg",
                         text: "粤式月子餐每天6餐"
                       },
                       {
-                        imgUrl: "/images/nutritionSystem_15.png",
+                        imgUrl: "/images/nutritionSystem_15.jpg",
                         text: "药膳调理"
                       },
                       {
-                        imgUrl: "/images/nutritionSystem_16.png",
+                        imgUrl: "/images/nutritionSystem_16.jpg",
                         text: "高档炖品"
                       }
                     ]
@@ -380,11 +380,11 @@ Page({
                     subTitle: "Beauty project",
                     item: [
                       {
-                        imgUrl: "/images/plasticBeauty_03.png",
+                        imgUrl: "/images/plasticBeauty_03.jpg",
                         text: "面部基础护理"
                       },
                       {
-                        imgUrl: "/images/plasticBeauty_05.png",
+                        imgUrl: "/images/plasticBeauty_05.jpg",
                         text: "面部高级抗衰全套护理"
                       }
                     ]
@@ -401,19 +401,19 @@ Page({
                 subTitle: "Body recovery",
                 item: [
                   {
-                    imgUrl: "/images/plasticBeauty_09.png",
+                    imgUrl: "/images/plasticBeauty_09.jpg",
                     text: "软光子腰腹部收紧"
                   },
                   {
-                    imgUrl: "/images/plasticBeauty_12.png",
+                    imgUrl: "/images/plasticBeauty_12.jpg",
                     text: "全身十二经络疏通"
                   },
                   {
-                    imgUrl: "/images/plasticBeauty_16.png",
+                    imgUrl: "/images/plasticBeauty_16.jpg",
                     text: "仪器盆底肌修复"
                   },
                   {
-                    imgUrl: "/images/plasticBeauty_17.png",
+                    imgUrl: "/images/plasticBeauty_17.jpg",
                     text: "骨盆矫正"
                   }
                 ]
@@ -434,31 +434,31 @@ Page({
 
                     item: [
                       {
-                        imgUrl: "/images/careSystem_32.png",
+                        imgUrl: "/images/careSystem_32.jpg",
                         text: "宝宝游泳"
                       },
                       {
-                        imgUrl: "/images/careSystem_34.png",
+                        imgUrl: "/images/careSystem_34.jpg",
                         text: "宝宝抚触"
                       },
                       {
-                        imgUrl: "/images/careSystem_38.png",
+                        imgUrl: "/images/careSystem_38.jpg",
                         text: "宝宝早早教"
                       },
                       {
-                        imgUrl: "/images/careSystem_39.png",
+                        imgUrl: "/images/careSystem_39.jpg",
                         text: "宝宝沐浴"
                       },
                       {
-                        imgUrl: "/images/careSystem_42.png",
+                        imgUrl: "/images/careSystem_42.jpg",
                         text: "宝宝0-6个月全脑早教课"
                       },
                       {
-                        imgUrl: "/images/careSystem_43.png",
+                        imgUrl: "/images/careSystem_43.jpg",
                         text: "离院后儿保"
                       },
                       {
-                        imgUrl: "/images/careSystem_47.png",
+                        imgUrl: "/images/careSystem_47.jpg",
                         text: "宝宝全智评估"
                       }
                     ]
@@ -481,39 +481,39 @@ Page({
                     subTitle: "",
                     item: [
                       {
-                        imgUrl: "/images/defenseSystem_03.png",
+                        imgUrl: "/images/defenseSystem_03.jpg",
                         text: "紫外线灯管消毒"
                       },
                       {
-                        imgUrl: "/images/defenseSystem_05.png",
+                        imgUrl: "/images/defenseSystem_05.jpg",
                         text: "沐浴室消毒"
                       },
                       {
-                        imgUrl: "/images/defenseSystem_08.png",
+                        imgUrl: "/images/defenseSystem_08.jpg",
                         text: "育婴室消毒"
                       },
                       {
-                        imgUrl: "/images/defenseSystem_14.png",
+                        imgUrl: "/images/defenseSystem_14.jpg",
                         text: "配奶间消毒"
                       },
                       {
-                        imgUrl: "/images/defenseSystem_15.png",
+                        imgUrl: "/images/defenseSystem_15.jpg",
                         text: "母婴同室消毒"
                       },
                       {
-                        imgUrl: "/images/defenseSystem_17.png",
+                        imgUrl: "/images/defenseSystem_17.jpg",
                         text: "早教室消毒"
                       },
                       {
-                        imgUrl: "/images/defenseSystem_22.png",
+                        imgUrl: "/images/defenseSystem_22.jpg",
                         text: "育婴室感染管理"
                       },
                       {
-                        imgUrl: "/images/defenseSystem_23.png",
+                        imgUrl: "/images/defenseSystem_23.jpg",
                         text: "生物环境检测"
                       },
                       {
-                        imgUrl: "/images/defenseSystem_24.png",
+                        imgUrl: "/images/defenseSystem_24.jpg",
                         text: "特制中药水擦澡"
                       }
                     ]
@@ -540,23 +540,23 @@ Page({
                     subTitle: "",
                     item: [
                       {
-                        imgUrl: "/images/securitySystem_03.png",
+                        imgUrl: "/images/securitySystem_03.jpg",
                         text: "安保团队"
                       },
                       {
-                        imgUrl: "/images/securitySystem_05.png",
+                        imgUrl: "/images/securitySystem_05.jpg",
                         text: "24小时监控"
                       },
                       {
-                        imgUrl: "/images/securitySystem_10.png",
+                        imgUrl: "/images/securitySystem_10.jpg",
                         text: "出入登记"
                       },
                       {
-                        imgUrl: "/images/securitySystem_11.png",
+                        imgUrl: "/images/securitySystem_11.jpg",
                         text: "停车位"
                       },
                       {
-                        imgUrl: "/images/securitySystem_14.png",
+                        imgUrl: "/images/securitySystem_14.jpg",
                         text: "独栋物业"
                       }
                     ]

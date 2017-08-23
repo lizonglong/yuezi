@@ -40,7 +40,7 @@ Page({
         id:6
       },
       {
-        imgPath: "/images/professionalSystem_18.png",
+        imgPath: "/images/professionalSystem_18.jpg",
         text: "全天候无缝安保体系",
         id:7
       }
