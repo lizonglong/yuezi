@@ -1,0 +1,34 @@
+/* pages/branch/branch.wxss */
+.branch{
+  text-align: center;
+  margin: 30rpx 0 40rpx;
+  padding: 0 2%;
+}
+.branch .img-list{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0;
+}
+.branch .img-list .img-box{
+  position: relative;
+  width: 49%;
+  margin-bottom: 20rpx;
+}
+.branch .img-list .img-box:nth-child(2n){
+  margin-left: 2%;
+}
+.branch .img-list .img-box image{
+  width: 100%;
+  height: 250rpx;
+}
+.branch-text{
+  font-size: 24rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  padding: 10rpx 0;
+  text-align: center;
+  background-color: rgba( 116, 197, 190,0.479);
+}

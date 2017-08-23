@@ -3,11 +3,14 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/about/about",
     "pages/package/package",
     "pages/service/service",
     "pages/service/service_tend/service_tend",
-    "pages/logs/logs"
+    "pages/about/about",
+    "pages/logs/logs",
+    "pages/branch/branch",
+    "pages/branch/branch_introduce/branch_introduce",
+	"pages/praise/praise"
   ],
   "window":{
     "backgroundTextStyle":"light",

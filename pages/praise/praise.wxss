@@ -1,0 +1,93 @@
+/* pages/praise/praise.wxss */
+.container{
+  text-align: center;
+  font-size: 24rpx;
+}
+.praise{
+  padding: 20rpx;
+  margin-bottom: 120rpx;
+}
+.praise .praise-head .publc-btn{
+  font-size: 24rpx;
+  border-radius: 20rpx 0 20rpx 0;
+  margin: 20rpx 10rpx;
+  width: 130rpx;
+  color: white;
+}
+.praise .praise-head .publc-btn.cur{
+  background: #ed85ad;
+}
+ .praise .praise-intro{
+  font-size: 21rpx;
+  margin-bottom: 30rpx;
+} 
+/*  评论列表样式 */
+.list-box{
+  display: flex;
+  border: 2rpx solid #ccc;
+  margin-bottom: 15rpx;
+  /* padding: 10rpx 0;  */
+}
+.list-box .list-avatar{
+  width: 160rpx;
+  padding: 20rpx;
+}
+.list-box .list-avatar image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.list-box .list-content{
+  flex: auto;
+  font-size: 22rpx;
+  text-align: left;
+  padding: 20rpx 0;
+}
+.list-box .list-content image{
+  height: 26rpx;
+  width: 170rpx;
+}
+
+/* 视频专区 */
+.praise-video .video-head video{
+  width: 100%;
+   /* height: 404rpx;  */
+}
+.praise-video .video-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* 视频列表模板 */
+.video-content{
+  width: 50%;
+  margin: 20rpx 0;
+}
+.video-content:nth-child(2n) .video-img{
+  padding-left: 20rpx;
+}
+.video-content .video-img image{
+  width: 100%;
+  height: 220rpx
+}
+.video-content .video-title{
+  font-size: 22rpx;
+}
+/* 视频列表脚步 */
+.list-bar .derect{
+  text-align: center;
+}
+.list-bar .derect text{
+  display: inline-block;
+  width: 40rpx;
+  line-height: 40rpx;
+  /* border: 1rpx solid #efefef; */
+  border-radius: 50%;
+  margin: 6rpx;
+}
+.list-bar .derect text.cur{
+  background: #64bab1;
+}
+ .list-bar .derect text:active{
+  background: #a6e4de;
+} 

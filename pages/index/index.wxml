@@ -53,6 +53,8 @@
     <view class="subTitle">BRAND HONOR</view>
     <image src="/images/w-homepage_68_14.jpg"></image>
   </view>
+  <import src="/template/twocode" />
+  <template is="twocode" data="{{bottomText:twocode.bottomText,twoCode:twocode.twoCode}}"></template>
   <import src="/template/footer" />
   <template is="footer" data="{{barUp:barUp,navImg: nav}}"></template>
 </view>

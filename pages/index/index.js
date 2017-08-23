@@ -1,6 +1,7 @@
-
+var util =  require('../../utils/util');
 Page({
   data: {
+    pageIndex: 0,
     banner: {
       imgUrls: [
         '/images/w-homepage_02.jpg',
@@ -12,45 +13,6 @@ Page({
       duration: 1000,
       circular: true
     },
-    nav: [
-      {
-        url: '/images/w-homepage_05.png',
-        text: '首页',
-        pageUrl:"/pages/index/index"
-      },
-      {
-        url: '/images/w-homepage_07.png',
-        text: "关于仕馨",
-        pageUrl: "/pages/about/about"
-      }, 
-      {
-        url:'/images/w-homepage_09.png',
-        text: '专业服务体系',
-        pageUrl: "/pages/service/service"
-      },
-      {
-        url: '/images/w-homepage_11.png',
-        text: '分店介绍',
-        
-      },
-      {
-        url: '/images/w-homepage_17.png',
-        text: "套餐服务",
-        pageUrl: "/pages/package/package"
-      },
-      {
-        url: '/images/w-homepage_18.png',
-        text: "妈妈见证"
-      },
-      {
-        url: '/images/w-homepage_19.png',
-        text: "月子资讯"
-      },
-      {
-        url: '/images/w-homepage_20.png',
-        text: "月子资讯"
-      }
-    ],
     videoUrl: 'http://ugcdl.video.gtimg.com/flv/162/228/e01560xy74g.m701.mp4?vkey=61524392932B184B242FDDA0BF2F717FA444F74D626D8AC4736DAF84A489BA78AA317F2D744B6F3B6DBA486B35E51CA2FF356D874C977E6833FF1575887390E2DB6EFF871B4A4235429076C47B6540C0E654AFA467C856E1CDEEE3DAD55DFF544723CEB424C26559243A8F750CE1F4F4CB52D217CADF0C91&br=29&platform=2&fmt=auto&level=0&sdtfrom=v5010&guid=06b741038042432903df98ac5a573465',
     branch:{
       imgUrls:[
@@ -184,16 +146,28 @@ Page({
         ]
       }
     ],
+    twocode: {
+      backImg: "/image/image.index_bg.jpg",
+      twoCode: [
+        {
+          imgPath: "/image/index_102.jpg",
+          text: "关注官方微信"
+        },
+        {
+          imgPath: "/image/index_104.jpg",
+          text: "关注官方微博"
+        }
+      ],
+      bottomText: "Copyright©2011 仕馨月子会所 (粤ICP备17008523号-1)"
+    },
     tabSelect:0
   },
-  navClick:function(ev){
-    var index = ev.currentTarget.dataset.index;// 模板不支持target
-    if(index == 0 || index>=2){
-      return;
-    }
-    wx.navigateTo({
-      url: this.data.nav[index].pageUrl
-    })
+  onReady:function(){
+    this.navClick = util.navClick;
+    this.barClick = util.barClick;
+    this.setData({
+      nav : util.nav
+    });
   },
   praiseClick: function(ev){
     var index = ev.target.dataset.index;
@@ -205,25 +179,6 @@ Page({
       tabSelect: index,
       praise: this.data.praise
     });
-  },
-  barClick: function(ev){
-    console.log(ev)
-    var index = ev.currentTarget.dataset.index;
-    if(index == 0){
-
-    }else if(index == 1){
-
-    }else{
-      this.data.barShow = !this.data.barShow;
-      var animation = wx.createAnimation({
-        duration: 500,
-        timingFunction: 'ease-in-out'
-      });
-      animation.bottom(this.data.barShow?"134rpx":"-500rpx").step();
-      this.setData({
-        barUp: animation.export()
-      })
-    }
   }
 })
 
